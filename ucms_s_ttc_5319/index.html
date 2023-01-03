@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-locale="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <title></title>
+  <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="./images/favicon.png"
+  />
+  <link rel="stylesheet" href="styles/rSlider.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+  />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="top-content">
+      <p class="top-subtitle">
+        Invista nos<br class="mobile-only"> CTT - Correios de Portugal
+      </p>
+      <img src="images/logo.png" alt="logo" class="top-logo">
+      <div class="top-title">
+        e ganhe um rendimento extra!
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <div class="sticky-form__wrapper">
+    <div id="regForm" class="top__form_wrapper">
+      <div class="popup-form__close-icon"></div>
+      <div class="top__form_title">Comece a ganhar com os CTT</div>
+      <div id="main-form-wrapper-1" class="main-form-wrapper">
+        <div id="lead-form-1" class="lead-form">
+          <form
+                  method="post"
+                  form-pattern="single_step"
+                  action=""
+                  class="lead-form__body sv-skin"
+                  onsubmit="event.preventDefault()"
+                  novalidate=""
+          >
+            <div class="lead-form__input-group">
+              <div class="lead-form__row lead-form__row_first-name">
+                <div
+                        class="lead-form__data-item lead-form__data-item_first-name"
+                >
+                  <label for="first_name" class="form__label"
+                  >Primeiro nome
+                  </label>
+                  <input
+                          type="text"
+                          name="first_name"
+                          id="first_name"
+                          class="lead-form__input lead-form__input_first-name required-field"
+                          validaterule="name"
+                          placeholder="por exemplo. Jose"
+                          value=""
+                          maxlength="50"
+                  />
+                  <div class="lead-form__tooltip lead-form__tooltip_empty">
+                    Primeiro nome (obrigatório)
+                  </div>
+                  <div class="lead-form__tooltip lead-form__tooltip_name">
+                    Mínimo de dois caracteres. Apenas letras
+                  </div>
+                </div>
+              </div>
+              <div class="lead-form__row lead-form__row_last-name">
+                <div
+                        class="lead-form__data-item lead-form__data-item_last-name"
+                >
+                  <label for="last_name" class="form__label"
+                  >Sobrenome</label
+                  >
+                  <input
+                          type="text"
+                          name="last_name"
+                          id="last_name"
+                          class="lead-form__input lead-form__input_last-name required-field"
+                          validaterule="name"
+                          placeholder="por exemplo. Santos"
+                          value=""
+                          maxlength="50"
+                  />
+                  <div class="lead-form__tooltip lead-form__tooltip_empty">
+                    Sobrenome (obrigatório)
+                  </div>
+                  <div class="lead-form__tooltip lead-form__tooltip_name">
+                    Mínimo de dois caracteres. Apenas letras
+                  </div>
+                </div>
+              </div>
+              <div class="lead-form__row lead-form__row_email">
+                <div
+                        class="lead-form__data-item lead-form__data-item_user-email"
+                >
+                  <label for="user_email" class="form__label"
+                  >Endereço de e-mail
+                  </label>
+                  <input
+                          type="email"
+                          name="user_email"
+                          id="user_email"
+                          class="lead-form__input user_email required-field"
+                          validaterule="email"
+                          placeholder="por exemplo. nome@gmail.com"
+                          value=""
+                          maxlength="255"
+                  />
+                  <div class="lead-form__tooltip lead-form__tooltip_empty">
+                    Endereço de e-mail (obrigatório)
+                  </div>
+                  <div
+                          class="lead-form__tooltip lead-form__tooltip_email-regex"
+                  >
+                    Inválido. Utilize o formato: nome@domain.xxx
+                  </div>
+                  <div
+                          class="lead-form__tooltip lead-form__tooltip_email-existing"
+                  >
+                    Já cadastrado. Escolha outro ou faça login
+                  </div>
+                </div>
+              </div>
+              <div class="lead-form__row lead-form__row_county-phone">
+                <label for="phone_num" class="form__label"
+                >Número de telefone
+                </label>
+                <div
+                        class="lead-form__data-item lead-form__data-item_prefix"
+                        data-iso=""
+                >
+                  <div class="lead-form__dcl-trigger"></div>
+                  <input
+                          type="text"
+                          readonly="readonly"
+                          name="country_prefix"
+                          id="country_prefix"
+                          class="lead-form__input lead-form__input_country-prefix"
+                          placeholder="Prefixo"
+                          value=""
+                          tabindex="-1"
+                          autocomplete="off"
+                  />
+                  <div class="lead-form__dcl">
+                    <div class="lead-form__dcl-inner"></div>
+                  </div>
+                  <input
+                          type="hidden"
+                          name="country"
+                          class="lead-form__input lead-form__input_country required-field"
+                          value=""
+                          validaterule="country"
+                          tabindex="-1"
+                          autocomplete="off"
+                  />
+                  <div class="lead-form__tooltip lead-form__tooltip_empty">
+                    Selecionar País
+                  </div>
+                  <div
+                          class="lead-form__tooltip lead-form__tooltip_country-restricted"
+                  >
+                    Sua localização ainda não é suportada
+                  </div>
+                </div>
+                <div
+                        class="lead-form__data-item lead-form__data-item_phone"
+                >
+                  <input
+                          type="tel"
+                          name="phone_num"
+                          id="phone_num"
+                          class="lead-form__input lead-form__input_phone-num required-field"
+                          validaterule="phone"
+                          placeholder="8719211"
+                          value=""
+                          maxlength="10"
+                  />
+                  <div class="lead-form__tooltip lead-form__tooltip_empty">
+                    Número de telefone (obrigatório)
+                  </div>
+                  <div
+                          class="lead-form__tooltip lead-form__tooltip_phone-short"
+                  >
+                    Insira um número de telefone válido
+                  </div>
+                  <div
+                          class="lead-form__tooltip lead-form__tooltip_phone-regex"
+                  >
+                    Utilize apenas números
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input
+                    type="hidden"
+                    class="language"
+                    name="language"
+                    value="pt"
+            />
+            <div class="lead-form__row lead-form__row_last">
+              <button
+                      type="submit"
+                      class="lead-form__submit lead-form-submit"
+              >
+                Obter informações
+              </button>
+            </div>
+            <div class="lead-form__row lead-form__row_gdpr">
+              <div class="lead-form__data-item lead-form__data-item_gdpr">
+                <div class="lead-form__gdpr">
+                  <label for="gdpr-1" class="gdpr-label checked">
+                    <input
+                            id="gdpr-1"
+                            validaterule="checkbox"
+                            type="checkbox"
+                            name="gdpr"
+                            class="lead-form__gdpr-checkbox required-field"
+                            checked=""
+                    />
+
+                    <span class="gdpr-text"
+                    >Eu concordo com a
+                          <a
+                                  href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014611/3804fecf-capitalix_privacy_policy.pdf"
+                                  target="_blank"
+                          >Política de privacidade</a
+                          >, com os
+                          <a
+                                  href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014612/ecbf3c01-capitalix_terms-and-conditions.pdf"
+                                  target="_blank"
+                          >Termos e condições</a>, e em receber conteúdo publicitário</span
+                    >
+                  </label>
+                  <div class="lead-form__tooltip lead-form__tooltip-gdpr">
+                    Para seguir, debe aceptar nuestras políticas.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+                    class="lead-form__data-item lead-form__data-item_global-error"
+            >
+              <div
+                      class="lead-form__tooltip lead-form__tooltip_global-error"
+              >
+                Estamos experimentando un problema técnico y estamos
+                trabajando para resolverlo con la mayor rapidez posible. Por
+                favor, inténtelo de nuevo más tarde
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="top__form_text">
+        Para investir, deve ter pelo menos 18 anos de idade. Mínimo capital exigido: 250€
+      </div>
+      <div class="top__form_payments">
+        <img
+                src="images/payment-methods1.png"
+                alt="payments"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="range-slider-wrapper">
+    <div class="container container--sticky">
+      <div class="range-slider">
+        <h3 class="range-slider__title">Descubra seus lucros potenciais de curto prazo (previsão de 2 meses)</h3>
+        <div id="sampleSlider"></div>
+        <div id="sliderLabel" class="range-slider__label"></div>
+        <a href="#regForm" class="range-slider__btn js-scroll">
+          <b>Lucro potencial</b>
+          <span class="range-slider__number" id="sliderValue"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <article class="article">
+    <div class="container">
+      <div class="article__title">
+        As ações dos CTT subiram mais de 50% desde março de 2020!
+      </div>
+      <p class="article__descr">
+        <b>Não há como negar que as ações dos CTT estão numa maré de sorte.</b><br><br>
+        Apoiadas pelo dinamismo e crescimento constante do comércio eletrónico, bem como o persistente bom desempenho do
+        Banco CTT, analistas do CaixaBank BPI aumentarem recentemente em 20% o preço-alvo que atribuem às ações dos CTT.<br><br>
+        Com os ganhos dos CTT previstos para crescer em 30,5% por ano, analistas acrescentaram que os resultados do
+        quarto semestre de 2020 "confirmavam a tendência de recuperação", enfatizando que o aumento em 36% no Encomendas
+        Expresso ocorreu em um período onde o volume das correspondências tradicionais diminuiu em 14,6%. O BPI também
+        salientou que os CTT preveem crescimento "de dois dígitos" em rendimentos de serviços do Banco CTT e de serviços
+        expressos e financeiros, aumento que continuaria a apoiar a atual recuperação nas ações dos CTT.<br><br>
+        Se sabe como ler nas entrelinhas, deve entender que esse é o momento perfeito para começar a investir nos CTT.
+        <b>Não espere: comece hoje com somente 250€.</b>
+      </p>
+      <img src="images/photo.jpg"
+           loading="lazy"
+           alt=""
+           class="article__img"
+      />
+      <a href="#regForm" class="btn-main js-scroll">
+        Junte-se hoje ao sucesso dos CTT!
+      </a>
+    </div>
+  </article>
+  <section class="features">
+    <div class="container">
+      <div class="features__title">
+        É fácil começar a ganhar.<br>
+        Obtenha acesso a:
+      </div>
+      <div class="features__list">
+        <div class="features__list__item list-item">
+          <img src="images/list-item-1.png"
+               loading="lazy"
+               alt="Payment methods"
+               class="list-item__icon"
+          />
+          <p class="list-item__title">
+            Plataforma segura e regulada para rendimentos
+          </p>
+        </div>
+        <div class="features__list__item list-item">
+          <img src="images/list-item-2.png"
+               loading="lazy"
+               alt="Payment methods"
+               class="list-item__icon"
+          />
+          <p class="list-item__title">
+            Envio de lucros para sua conta em 24 horas
+          </p>
+        </div>
+        <div class="features__list__item list-item">
+          <img src="images/list-item-3.png"
+               loading="lazy"
+               alt="Payment methods"
+               class="list-item__icon"
+          />
+          <p class="list-item__title">
+            Ferramentas de aprendizado fácil
+          </p>
+        </div>
+        <div class="features__list__item list-item">
+          <img src="images/list-item-4.png"
+               loading="lazy"
+               alt="Payment methods"
+               class="list-item__icon"
+          />
+          <p class="list-item__title">
+            Suporte 24 horas e assistência constante
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="payments">
+    <div class="container">
+      <a href="#regForm" class="btn-main js-scroll">
+        Lucre com o sucesso dos CTT hoje!
+      </a>
+      <img src="images/payment.png"
+           loading="lazy"
+           alt="Payment methods"
+           class="payments__img"
+      />
+    </div>
+  </section>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="scripts/rSlider.min.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="scripts/scroll.js"></script>
+<script async src="scripts/main.js"></script>
+</body>
+</html>
