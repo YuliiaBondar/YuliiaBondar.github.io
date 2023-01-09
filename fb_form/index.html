@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebbok Form Helper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="lead-form">
+    <form
+            method="post"
+            form-pattern="single_step"
+            action=""
+            class="lead-form__body sv-skin"
+            onsubmit="event.preventDefault()"
+            novalidate=""
+    >
+        <div class="lead-form__input-group">
+            <div>
+                <label for="brand" class="form__label">Select brand</label>
+                <select name="brand" id="brand">
+                    <option value="31" label="Capitalix">Capitalix</option>
+                    <option value="115" label="TradeEU">TradeEU</option>
+                    <option value="106" label="InvestFW">InvestFW</option>
+                </select>
+            </div>
+            <div>
+                <label for="country" class="form__label">Select country</label>
+                <select name="country" id="country"><option data-iso="AF" data-country_code="93" value="1" label="Afghanistan">Afghanistan</option><option data-iso="AL" data-country_code="355" value="2" label="Albania">Albania</option><option data-iso="DZ" data-country_code="213" value="3" label="Algeria">Algeria</option><option data-iso="AS" data-country_code="1684" value="4" label="American Samoa">American Samoa</option><option data-iso="AD" data-country_code="376" value="5" label="Andorra">Andorra</option><option data-iso="AO" data-country_code="244" value="6" label="Angola">Angola</option><option data-iso="AI" data-country_code="1264" value="7" label="Anguilla">Anguilla</option><option data-iso="AQ" data-country_code="672" value="8" label="Antarctica">Antarctica</option><option data-iso="AG" data-country_code="1268" value="9" label="Antigua and Barbuda">Antigua and Barbuda</option><option data-iso="AR" data-country_code="54" value="10" label="Argentina">Argentina</option><option data-iso="AM" data-country_code="374" value="11" label="Armenia">Armenia</option><option data-iso="AW" data-country_code="297" value="12" label="Aruba">Aruba</option><option data-iso="AU" data-country_code="61" value="13" label="Australia">Australia</option><option data-iso="AT" data-country_code="43" value="14" label="Austria">Austria</option><option data-iso="AZ" data-country_code="994" value="15" label="Azerbaijan">Azerbaijan</option><option data-iso="BS" data-country_code="1242" value="16" label="Bahamas">Bahamas</option><option data-iso="BH" data-country_code="973" value="17" label="Bahrain">Bahrain</option><option data-iso="BD" data-country_code="880" value="18" label="Bangladesh">Bangladesh</option><option data-iso="BB" data-country_code="1246" value="19" label="Barbados">Barbados</option><option data-iso="BY" data-country_code="375" value="20" label="Belarus">Belarus</option><option data-iso="BZ" data-country_code="501" value="22" label="Belize">Belize</option><option data-iso="BJ" data-country_code="229" value="23" label="Benin">Benin</option><option data-iso="BM" data-country_code="1441" value="24" label="Bermuda">Bermuda</option><option data-iso="BT" data-country_code="975" value="25" label="Bhutan">Bhutan</option><option data-iso="BO" data-country_code="591" value="26" label="Bolivia">Bolivia</option><option data-iso="BA" data-country_code="387" value="27" label="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option data-iso="BW" data-country_code="267" value="28" label="Botswana">Botswana</option><option data-iso="BV" data-country_code="55" value="29" label="Bouvet Island">Bouvet Island</option><option data-iso="BR" data-country_code="55" value="30" label="Brazil">Brazil</option><option data-iso="IO" data-country_code="246" value="31" label="British Indian Ocean Territory">British Indian Ocean Territory</option><option data-iso="BN" data-country_code="673" value="32" label="Brunei Darussalam">Brunei Darussalam</option><option data-iso="BG" data-country_code="359" value="33" label="Bulgaria">Bulgaria</option><option data-iso="BF" data-country_code="226" value="34" label="Burkina Faso">Burkina Faso</option><option data-iso="BI" data-country_code="257" value="35" label="Burundi">Burundi</option><option data-iso="KH" data-country_code="855" value="36" label="Cambodia">Cambodia</option><option data-iso="CM" data-country_code="237" value="37" label="Cameroon">Cameroon</option><option data-iso="CA" data-country_code="1" value="38" label="Canada">Canada</option><option data-iso="CV" data-country_code="238" value="39" label="Cabo Verde">Cabo Verde</option><option data-iso="KY" data-country_code="1345" value="40" label="Cayman Islands">Cayman Islands</option><option data-iso="CF" data-country_code="236" value="41" label="Central African Republic">Central African Republic</option><option data-iso="TD" data-country_code="235" value="42" label="Chad">Chad</option><option data-iso="CL" data-country_code="56" value="43" label="Chile">Chile</option><option data-iso="CN" data-country_code="86" value="44" label="China">China</option><option data-iso="CX" data-country_code="61" value="45" label="Christmas Island">Christmas Island</option><option data-iso="CC" data-country_code="61" value="46" label="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option><option data-iso="CO" data-country_code="57" value="47" label="Colombia">Colombia</option><option data-iso="KM" data-country_code="269" value="48" label="Comoros">Comoros</option><option data-iso="CD" data-country_code="243" value="50" label="Congo, the Democratic Republic of the">Congo, the Democratic Republic of the</option><option data-iso="CK" data-country_code="682" value="51" label="Cook Islands">Cook Islands</option><option data-iso="CR" data-country_code="506" value="52" label="Costa Rica">Costa Rica</option><option data-iso="CI" data-country_code="225" value="53" label="Cote D'Ivoire">Cote D'Ivoire</option><option data-iso="HR" data-country_code="385" value="54" label="Croatia">Croatia</option><option data-iso="CU" data-country_code="53" value="55" label="Cuba">Cuba</option><option data-iso="CY" data-country_code="357" value="56" label="Cyprus">Cyprus</option><option data-iso="CZ" data-country_code="420" value="57" label="Czech Republic">Czech Republic</option><option data-iso="DK" data-country_code="45" value="58" label="Denmark">Denmark</option><option data-iso="DJ" data-country_code="253" value="59" label="Djibouti">Djibouti</option><option data-iso="DM" data-country_code="1767" value="60" label="Dominica">Dominica</option><option data-iso="DO" data-country_code="1809" value="61" label="Dominican Republic">Dominican Republic</option><option data-iso="EC" data-country_code="593" value="62" label="Ecuador">Ecuador</option><option data-iso="EG" data-country_code="20" value="63" label="Egypt">Egypt</option><option data-iso="SV" data-country_code="503" value="64" label="El Salvador">El Salvador</option><option data-iso="GQ" data-country_code="240" value="65" label="Equatorial Guinea">Equatorial Guinea</option><option data-iso="ER" data-country_code="291" value="66" label="Eritrea">Eritrea</option><option data-iso="EE" data-country_code="372" value="67" label="Estonia">Estonia</option><option data-iso="ET" data-country_code="251" value="68" label="Ethiopia">Ethiopia</option><option data-iso="FK" data-country_code="500" value="69" label="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option><option data-iso="FO" data-country_code="298" value="70" label="Faroe Islands">Faroe Islands</option><option data-iso="FJ" data-country_code="679" value="71" label="Fiji">Fiji</option><option data-iso="FI" data-country_code="358" value="72" label="Finland">Finland</option><option data-iso="GF" data-country_code="594" value="74" label="French Guiana">French Guiana</option><option data-iso="PF" data-country_code="689" value="75" label="French Polynesia">French Polynesia</option><option data-iso="TF" data-country_code="262" value="76" label="French Southern Territories">French Southern Territories</option><option data-iso="GA" data-country_code="241" value="77" label="Gabon">Gabon</option><option data-iso="GM" data-country_code="220" value="78" label="Gambia">Gambia</option><option data-iso="GE" data-country_code="995" value="79" label="Georgia">Georgia</option><option data-iso="DE" data-country_code="49" value="80" label="Germany">Germany</option><option data-iso="GH" data-country_code="233" value="81" label="Ghana">Ghana</option><option data-iso="GI" data-country_code="350" value="82" label="Gibraltar">Gibraltar</option><option data-iso="GR" data-country_code="30" value="83" label="Greece">Greece</option><option data-iso="GL" data-country_code="2991" value="84" label="Greenland">Greenland</option><option data-iso="GD" data-country_code="1473" value="85" label="Grenada">Grenada</option><option data-iso="GP" data-country_code="590" value="86" label="Guadeloupe">Guadeloupe</option><option data-iso="GU" data-country_code="1671" value="87" label="Guam">Guam</option><option data-iso="GT" data-country_code="502" value="88" label="Guatemala">Guatemala</option><option data-iso="GN" data-country_code="224" value="89" label="Guinea">Guinea</option><option data-iso="GW" data-country_code="245" value="90" label="Guinea-Bissau">Guinea-Bissau</option><option data-iso="GY" data-country_code="592" value="91" label="Guyana">Guyana</option><option data-iso="HT" data-country_code="509" value="92" label="Haiti">Haiti</option><option data-iso="HM" data-country_code="672" value="93" label="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option><option data-iso="VA" data-country_code="379" value="94" label="Holy See (Vatican City State)">Holy See (Vatican City State)</option><option data-iso="HN" data-country_code="504" value="95" label="Honduras">Honduras</option><option data-iso="HK" data-country_code="852" value="96" label="Hong Kong">Hong Kong</option><option data-iso="HU" data-country_code="36" value="97" label="Hungary">Hungary</option><option data-iso="IS" data-country_code="354" value="98" label="Iceland">Iceland</option><option data-iso="IN" data-country_code="91" value="99" label="India">India</option><option data-iso="ID" data-country_code="62" value="100" label="Indonesia">Indonesia</option><option data-iso="IE" data-country_code="353" value="103" label="Ireland">Ireland</option><option data-iso="IT" data-country_code="39" value="105" label="Italy">Italy</option><option data-iso="JM" data-country_code="1876" value="106" label="Jamaica">Jamaica</option><option data-iso="JO" data-country_code="962" value="108" label="Jordan">Jordan</option><option data-iso="KZ" data-country_code="7" value="109" label="Kazakhstan">Kazakhstan</option><option data-iso="KE" data-country_code="254" value="110" label="Kenya">Kenya</option><option data-iso="KI" data-country_code="686" value="111" label="Kiribati">Kiribati</option><option data-iso="KR" data-country_code="82" value="113" label="Korea, Republic of (South)">Korea, Republic of (South)</option><option data-iso="KW" data-country_code="965" value="114" label="Kuwait">Kuwait</option><option data-iso="KG" data-country_code="996" value="115" label="Kyrgyzstan">Kyrgyzstan</option><option data-iso="LA" data-country_code="856" value="116" label="Lao People's Democratic Republic">Lao People's Democratic Republic</option><option data-iso="LV" data-country_code="371" value="117" label="Latvia">Latvia</option><option data-iso="LS" data-country_code="266" value="119" label="Lesotho">Lesotho</option><option data-iso="LR" data-country_code="231" value="120" label="Liberia">Liberia</option><option data-iso="LI" data-country_code="423" value="122" label="Liechtenstein">Liechtenstein</option><option data-iso="LT" data-country_code="370" value="123" label="Lithuania">Lithuania</option><option data-iso="LU" data-country_code="352" value="124" label="Luxembourg">Luxembourg</option><option data-iso="MO" data-country_code="853" value="125" label="Macao">Macao</option><option data-iso="MK" data-country_code="389" value="126" label="Macedonia, the Former Yugoslav Republic of">Macedonia, the Former Yugoslav Republic of</option><option data-iso="MG" data-country_code="261" value="127" label="Madagascar">Madagascar</option><option data-iso="MW" data-country_code="265" value="128" label="Malawi">Malawi</option><option data-iso="MY" data-country_code="60" value="129" label="Malaysia">Malaysia</option><option data-iso="MV" data-country_code="960" value="130" label="Maldives">Maldives</option><option data-iso="ML" data-country_code="223" value="131" label="Mali">Mali</option><option data-iso="MT" data-country_code="356" value="132" label="Malta">Malta</option><option data-iso="MH" data-country_code="692" value="133" label="Marshall Islands">Marshall Islands</option><option data-iso="MQ" data-country_code="596" value="134" label="Martinique">Martinique</option><option data-iso="MR" data-country_code="222" value="135" label="Mauritania">Mauritania</option><option data-iso="MU" data-country_code="2302" value="136" label="Mauritius">Mauritius</option><option data-iso="YT" data-country_code="262" value="137" label="Mayotte">Mayotte</option><option data-iso="MX" data-country_code="52" value="138" label="Mexico">Mexico</option><option data-iso="FM" data-country_code="691" value="139" label="Micronesia, Federated States of">Micronesia, Federated States of</option><option data-iso="MD" data-country_code="373" value="140" label="Moldova, Republic of">Moldova, Republic of</option><option data-iso="MC" data-country_code="377" value="141" label="Monaco">Monaco</option><option data-iso="MN" data-country_code="976" value="142" label="Mongolia">Mongolia</option><option data-iso="MS" data-country_code="1664" value="143" label="Montserrat">Montserrat</option><option data-iso="MA" data-country_code="212" value="144" label="Morocco">Morocco</option><option data-iso="MZ" data-country_code="258" value="145" label="Mozambique">Mozambique</option><option data-iso="MM" data-country_code="95" value="146" label="Myanmar">Myanmar</option><option data-iso="NA" data-country_code="264" value="147" label="Namibia">Namibia</option><option data-iso="NR" data-country_code="674" value="148" label="Nauru">Nauru</option><option data-iso="NP" data-country_code="977" value="149" label="Nepal">Nepal</option><option data-iso="NL" data-country_code="31" value="150" label="Netherlands">Netherlands</option><option data-iso="AN" data-country_code="599" value="151" label="Netherlands Antilles">Netherlands Antilles</option><option data-iso="NC" data-country_code="687" value="152" label="New Caledonia">New Caledonia</option><option data-iso="NZ" data-country_code="64" value="153" label="New Zealand">New Zealand</option><option data-iso="NI" data-country_code="505" value="154" label="Nicaragua">Nicaragua</option><option data-iso="NE" data-country_code="227" value="155" label="Niger">Niger</option><option data-iso="NG" data-country_code="234" value="156" label="Nigeria">Nigeria</option><option data-iso="NU" data-country_code="683" value="157" label="Niue">Niue</option><option data-iso="NF" data-country_code="672" value="158" label="Norfolk Island">Norfolk Island</option><option data-iso="MP" data-country_code="1670" value="159" label="Northern Mariana Islands">Northern Mariana Islands</option><option data-iso="NO" data-country_code="47" value="160" label="Norway">Norway</option><option data-iso="OM" data-country_code="968" value="161" label="Oman">Oman</option><option data-iso="PK" data-country_code="92" value="162" label="Pakistan">Pakistan</option><option data-iso="PW" data-country_code="680" value="163" label="Palau">Palau</option><option data-iso="PS" data-country_code="970" value="164" label="Palestinian Territory">Palestinian Territory</option><option data-iso="PA" data-country_code="507" value="165" label="Panama">Panama</option><option data-iso="PG" data-country_code="675" value="166" label="Papua New Guinea">Papua New Guinea</option><option data-iso="PY" data-country_code="595" value="167" label="Paraguay">Paraguay</option><option data-iso="PE" data-country_code="51" value="168" label="Peru">Peru</option><option data-iso="PH" data-country_code="63" value="169" label="Philippines">Philippines</option><option data-iso="PN" data-country_code="870" value="170" label="Pitcairn">Pitcairn</option><option data-iso="PL" data-country_code="48" value="171" label="Poland">Poland</option><option data-iso="PT" data-country_code="351" value="172" label="Portugal">Portugal</option><option data-iso="PR" data-country_code="1" value="173" label="Puerto Rico">Puerto Rico</option><option data-iso="QA" data-country_code="974" value="174" label="Qatar">Qatar</option><option data-iso="RE" data-country_code="262" value="175" label="Reunion">Reunion</option><option data-iso="RU" data-country_code="7" value="177" label="Russia">Russia</option><option data-iso="RW" data-country_code="250" value="178" label="Rwanda">Rwanda</option><option data-iso="SH" data-country_code="290" value="179" label="Saint Helena">Saint Helena</option><option data-iso="KN" data-country_code="1869" value="180" label="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option data-iso="LC" data-country_code="1758" value="181" label="Saint Lucia">Saint Lucia</option><option data-iso="PM" data-country_code="508" value="182" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option><option data-iso="VC" data-country_code="1784" value="183" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option data-iso="WS" data-country_code="685" value="184" label="Samoa">Samoa</option><option data-iso="SM" data-country_code="378" value="185" label="San Marino">San Marino</option><option data-iso="ST" data-country_code="239" value="186" label="Sao Tome and Principe">Sao Tome and Principe</option><option data-iso="SA" data-country_code="966" value="187" label="Saudi Arabia">Saudi Arabia</option><option data-iso="SN" data-country_code="221" value="188" label="Senegal">Senegal</option><option data-iso="SC" data-country_code="248" value="190" label="Seychelles">Seychelles</option><option data-iso="SL" data-country_code="232" value="191" label="Sierra Leone">Sierra Leone</option><option data-iso="SG" data-country_code="65" value="192" label="Singapore">Singapore</option><option data-iso="SK" data-country_code="421" value="193" label="Slovakia">Slovakia</option><option data-iso="SI" data-country_code="386" value="194" label="Slovenia">Slovenia</option><option data-iso="SB" data-country_code="677" value="195" label="Solomon Islands">Solomon Islands</option><option data-iso="ZA" data-country_code="27" value="197" label="South Africa">South Africa</option><option data-iso="GS" data-country_code="500" value="198" label="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option><option data-iso="LK" data-country_code="94" value="200" label="Sri Lanka">Sri Lanka</option><option data-iso="SR" data-country_code="597" value="202" label="Suriname">Suriname</option><option data-iso="SJ" data-country_code="47" value="203" label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option><option data-iso="SZ" data-country_code="268" value="204" label="Swaziland">Swaziland</option><option data-iso="SE" data-country_code="46" value="205" label="Sweden">Sweden</option><option data-iso="CH" data-country_code="41" value="206" label="Switzerland">Switzerland</option><option data-iso="TW" data-country_code="886" value="208" label="Taiwan, Province of China">Taiwan, Province of China</option><option data-iso="TJ" data-country_code="992" value="209" label="Tajikistan">Tajikistan</option><option data-iso="TZ" data-country_code="255" value="210" label="Tanzania, United Republic of">Tanzania, United Republic of</option><option data-iso="TH" data-country_code="66" value="211" label="Thailand">Thailand</option><option data-iso="TL" data-country_code="670" value="212" label="Timor-Leste">Timor-Leste</option><option data-iso="TG" data-country_code="228" value="213" label="Togo">Togo</option><option data-iso="TK" data-country_code="690" value="214" label="Tokelau">Tokelau</option><option data-iso="TO" data-country_code="676" value="215" label="Tonga">Tonga</option><option data-iso="TT" data-country_code="1868" value="216" label="Trinidad and Tobago">Trinidad and Tobago</option><option data-iso="TN" data-country_code="216" value="217" label="Tunisia">Tunisia</option><option data-iso="TR" data-country_code="90" value="218" label="Turkey">Turkey</option><option data-iso="TM" data-country_code="993" value="219" label="Turkmenistan">Turkmenistan</option><option data-iso="TC" data-country_code="1649" value="220" label="Turks and Caicos Islands">Turks and Caicos Islands</option><option data-iso="TV" data-country_code="688" value="221" label="Tuvalu">Tuvalu</option><option data-iso="UG" data-country_code="256" value="222" label="Uganda">Uganda</option><option data-iso="AE" data-country_code="971" value="224" label="United Arab Emirates">United Arab Emirates</option><option data-iso="GB" data-country_code="44" value="225" label="United Kingdom">United Kingdom</option><option data-iso="UY" data-country_code="598" value="228" label="Uruguay">Uruguay</option><option data-iso="UZ" data-country_code="998" value="229" label="Uzbekistan">Uzbekistan</option><option data-iso="VU" data-country_code="678" value="230" label="Vanuatu">Vanuatu</option><option data-iso="VE" data-country_code="58" value="231" label="Venezuela">Venezuela</option><option data-iso="VN" data-country_code="84" value="232" label="Viet Nam">Viet Nam</option><option data-iso="VG" data-country_code="1284" value="233" label="Virgin Islands, British">Virgin Islands, British</option><option data-iso="VI" data-country_code="1340" value="234" label="Virgin Islands, U.s.">Virgin Islands, U.s.</option><option data-iso="WF" data-country_code="681" value="235" label="Wallis and Futuna">Wallis and Futuna</option><option data-iso="EH" data-country_code="212" value="236" label="Western Sahara">Western Sahara</option><option data-iso="ZM" data-country_code="260" value="238" label="Zambia">Zambia</option><option data-iso="ZW" data-country_code="263" value="239" label="Zimbabwe">Zimbabwe</option><option data-iso="XK" data-country_code="381" value="240" label="Kosovo">Kosovo</option><option data-iso="ME" data-country_code="382" value="241" label="Montenegro">Montenegro</option><option data-iso="AX" data-country_code="358" value="242" label="Aland Islands">Aland Islands</option><option data-iso="GG" data-country_code="44" value="243" label="Guernsey">Guernsey</option><option data-iso="JE" data-country_code="44" value="244" label="Jersey">Jersey</option><option data-iso="IM" data-country_code="44" value="245" label="Isle of Man">Isle of Man</option><option data-iso="BL" data-country_code="590" value="246" label="Saint Barthélemy">Saint Barthélemy</option><option data-iso="MF" data-country_code="590" value="247" label="Saint-Martin (French part)">Saint-Martin (French part)</option><option data-iso="SS" data-country_code="211" value="248" label="South Sudan">South Sudan</option><option data-iso="SX" data-country_code="599" value="249" label="Sint Maarten">Sint Maarten</option><option data-iso="CW" data-country_code="599" value="250" label="Curaçao">Curaçao</option><option data-iso="BQ" data-country_code="599" value="251" label="Bonaire, Sint Eustatius, and Saba">Bonaire, Sint Eustatius, and Saba</option></select>
+            </div>
+            <div>
+                <label for="language" class="form__label">Select language</label>
+                <select name="language" id="language">
+                    <option value="af">Afrikaans</option>
+                    <option value="ar">Arabic</option>
+                    <option value="da">Danish</option>
+                    <option value="de">German</option>
+                    <option value="ea">Latin America</option>
+                    <option value="el">Greek</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ms">Malaysia</option>
+                    <option value="nl">Dutch</option>
+                    <option value="pl">Polish</option>
+                    <option value="pt">Portugal</option>
+                    <option value="sv">Swedish</option>
+                    <option value="th">Thai</option>
+                    <option value="zh">Mandarin Chinese</option>
+                </select>
+            </div>
+            <div class="lead-form__row lead-form__row_first-name">
+                <div
+                        class="lead-form__data-item lead-form__data-item_first-name"
+                >
+                    <label for="first_name" class="form__label"
+                    >First name</label
+                    >
+                    <input
+                            type="text"
+                            name="first_name"
+                            id="first_name"
+                            class="lead-form__input lead-form__input_first-name required-field"
+                            validaterule="name"
+                            placeholder="e.g. John"
+                            value=""
+                            maxlength="50"
+                    />
+                </div>
+            </div>
+            <div class="lead-form__row lead-form__row_last-name">
+                <div
+                        class="lead-form__data-item lead-form__data-item_last-name"
+                >
+                    <label for="last_name" class="form__label"
+                    >Last name</label
+                    >
+                    <input
+                            type="text"
+                            name="last_name"
+                            id="last_name"
+                            class="lead-form__input lead-form__input_last-name required-field"
+                            validaterule="name"
+                            placeholder="e.g. Lander"
+                            value=""
+                            maxlength="50"
+                    />
+                </div>
+            </div>
+            <div class="lead-form__row lead-form__row_email">
+                <div
+                        class="lead-form__data-item lead-form__data-item_user-email"
+                >
+                    <label for="user_email" class="form__label"
+                    >E-mail</label
+                    >
+                    <input
+                            type="email"
+                            name="user_email"
+                            id="user_email"
+                            class="lead-form__input user_email required-field"
+                            validaterule="email"
+                            placeholder="e.g. name@gmail.com"
+                            value=""
+                            maxlength="255"
+                    />
+                </div>
+            </div>
+            <div class="lead-form__row lead-form__row_country-phone">
+                <label for="full_phone" class="form__label"
+                >Full phone number</label
+                >
+                <div
+                        class="lead-form__data-item lead-form__data-item_phone"
+                >
+                    <input
+                            type="tel"
+                            name="full_phone"
+                            id="full_phone"
+                            class="lead-form__input lead-form__input_phone-num required-field"
+                            placeholder="+966118028020"
+                            value=""
+                            maxlength="24"
+                    />
+                </div>
+            </div>
+            <div>
+                <label for="marketing" class="form__label">Marketing params</label>
+                <input name="marketing" id="marketing" value="campaign_id=0000"/>
+            </div>
+            <div>
+                <label for="funneluri" class="form__label">Funnel URI</label>
+                <input name="funneluri" id="funneluri" value="/maz_fb_0000"/>
+            </div>
+            <div>
+                <label for="stockname" class="form__label">Stock Name</label>
+                <input name="stockname" id="stockname" value="Amazon"/>
+            </div>
+        </div>
+        <div class="lead-form__row lead-form__row_last">
+            <button
+                    type="submit"
+                    class="lead-form__submit lead-form-submit"
+            >
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

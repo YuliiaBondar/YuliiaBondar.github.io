@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.form__label {
+    display: block;
+    color: rgb(33,33,33);
+}
+
+input, select, button {
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+input {
+    padding: 5px 7px;
+}
+
+button {
+    padding: 20px;
+    cursor: pointer;
+}
