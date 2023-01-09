@@ -3,21 +3,24 @@
 }
 
 body {
-    font-size: 18px;
     font-family: sans-serif;
 }
 
 .form__label {
     display: block;
-    color: rgb(33,33,33);
+    color: grey;
+    margin-bottom: 2px;
+    font-size: 13px;
 }
 
 input, select, button {
-    font-size: 20px;
+    font-size: 17px;
     display: block;
-    width: 300px;
+    width: 100%;
     margin-bottom: 15px;
     padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 
 input {
@@ -25,6 +28,25 @@ input {
 }
 
 button {
-    padding: 20px;
+    font-size: 19px;
+    padding: 15px;
     cursor: pointer;
+    background-color: #000;
+    border: 1px solid black;
+    outline: 0;
+    border-radius: 50px;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.lead-form {
+    max-width: 368px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
 }

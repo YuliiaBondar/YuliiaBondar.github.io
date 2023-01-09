@@ -476,15 +476,6 @@ var restrictedCountries = ["223", "104"]; /*"Ukraine", "Israel"*/
             pixels: [0] /* [] causes all pixel to fire. ToDo */,
         };
 
-        if ("subCampaign" in globalOptions) {
-            dataObj["sub_campaign"] = globalOptions["subCampaign"];
-        }
-
-        if ("voluumCid" in globalOptions) {
-            marketingParams += "&subc=" + globalOptions["voluumCid"];
-            dataObj["pixels"].push(1257);
-        }
-
         $.ajax({
             type: "POST",
             url: "https://api.royariyal.com/api/leads",
@@ -516,17 +507,10 @@ var restrictedCountries = ["223", "104"]; /*"Ukraine", "Israel"*/
             }
         }
 
-        // if (globalOptions.noRedirectBrand) {
-        //     $(document).trigger("showNoRedirectPopup");
-        // } else {
-        //     window.setTimeout(function () {
-        //         window.location.href = responseData.meta.redirectTo;
-        //     }, 500);
-        // }
         window.setTimeout(function () {
             alert('Lead with email "' + responseData.data[0].email + '" was successfully pushed.');
         }, 500);
-        console.log('Lead with email "' + responseData.data[0].email + '" was successfully pushed.');
+        console.log(responseData);
     };
     leadFormFunc.prototype.handleErrorResponse = function (responseText) {
         try {
@@ -565,51 +549,5 @@ var leadFormsArr = [];
 $(document).ready(function () {
     $(".lead-form").each(function (i, item) {
         leadFormsArr.push(new leadFormFunc(item));
-    });
-
-    var getGeoInfo = $.Deferred();
-    var getCountryList = $.Deferred();
-
-    $.when(getGeoInfo, getCountryList).then(function () {
-        leadFormsArr.forEach(function (formObj) {
-            formObj.initCountryList();
-        });
-    });
-
-    var getLocalCountryList = function () {
-        return $.getJSON(
-            window.funnelOptions.pathPrefix + "global/data/countries.json",
-            function (result) {
-                window.countryList = result;
-
-                getCountryList.resolve();
-            }
-        );
-    };
-
-    $.ajax({
-        url: "https://api.royariyal.com/api/visitor-country",
-        type: "GET",
-        dataType: "json",
-        success: function (result) {
-            window.geoIpData = result;
-            $(document).trigger("geoReady", result);
-        },
-        complete: getGeoInfo.resolve,
-        timeout: 3000,
-    });
-    $.ajax({
-        url:
-            "https://api.royariyal.com/api/brands/" +
-            window.funnelOptions.brand +
-            "/country/allowed",
-        type: "GET",
-        dataType: "json",
-        success: function (result) {
-            window.countryList = result;
-            getCountryList.resolve();
-        },
-        error: getLocalCountryList,
-        timeout: 3000,
     });
 });
