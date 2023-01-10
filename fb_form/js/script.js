@@ -321,13 +321,16 @@ var restrictedCountries = ["223", "104"]; /*"Ukraine", "Israel"*/
                         var nameReg = /^[a-zA-Z\u0600-\u06FF\s]+$/; /* a-zA-Z + Arabic */
                         return nameReg.test(name) ? name.length >= 2 : false;
                     },
+                    nonempty: function (nonempty) {
+                        return true;
+                    },
                     email: function (email) {
                         var emailReg =
                             /^[a-zA-Z0-9.’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/;
                         return emailReg.test(email) ? email.length <= 48 : false;
                     },
-                    phone: function (number) {
-                        var numberReg = /^[0-9]+$/;
+                    fullphone: function (number) {
+                        var numberReg = /^[+0-9]+$/;
                         if (number.length < 7 && numberReg.test(number)) {
                             return "short";
                         } else if (!numberReg.test(number)) {
