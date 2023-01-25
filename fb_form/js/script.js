@@ -573,7 +573,7 @@ var restrictedCountries = ["223", "104"]; /*"Ukraine", "Israel"*/
 
         $.ajax({
             type: "POST",
-            url: "https://api.royariyal.com/api/leads",
+            url: "https://api.royariyal.com/api/leads?lead_no_limit=1",
             contentType: "application/json",
             data: JSON.stringify(dataObj),
             dataType: "json",
