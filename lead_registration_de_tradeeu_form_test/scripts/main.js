@@ -1,9 +1,9 @@
 window.funnelOptions = {
-  lang: "en",
+  lang: "de",
   brand: 115,
   disableErrorPlaceholder: true,
   pathPrefix: "../../",
-  funnel_uri: "/bcp_en",
+  funnel_uri: "/lead_registration_de",
   funnel_atts: ["redirect_brand_on_step_1"],
 };
 
@@ -75,9 +75,9 @@ var restrictedCountries = ["223", "104"]; /*"Ukraine", "Israel"*/
         var validationEvent = "input";
         this.required_fields[fieldName] = requiredField;
         if (
-          fieldName === "currency" ||
-          fieldName === "terms" ||
-          fieldName === "gdpr"
+            fieldName === "currency" ||
+            fieldName === "terms" ||
+            fieldName === "gdpr"
         ) {
           validationEvent = "change";
         } else if (fieldName === "country_prefix" || fieldName === "country") {
@@ -550,7 +550,7 @@ var restrictedCountries = ["223", "104"]; /*"Ukraine", "Israel"*/
       $(document).trigger("showNoRedirectPopup");
     } else {
       window.setTimeout(function () {
-        window.location.href = 'https://www.tradeeu.com/';
+        window.location.href = "https://www.tradeeu.com/";
       }, 500);
     }
   };

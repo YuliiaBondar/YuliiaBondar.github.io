@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="de" data-locale="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="A leading trading platform for Trading Global Financial Assets | TradeEU"
+    />
+    <title>
+      TradeEU | Ein führender Broker für den Handel mit globalen Finanzwerten
+    </title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/favicon.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="top-block">
+      <div class="container">
+        <img src="./images/top-img.png" alt="top-img" class="top-img" />
+        <div class="top-block__inner">
+          <div class="top-block__logo">
+            <img src="./images/logo.png" alt="top-logo" />
+          </div>
+          <h1 class="top-block__title">
+            Eine <br class="desktop-only" />
+            Handelsplattform<br class="desktop-only" />
+            für jedermann
+          </h1>
+          <h2 class="top-block__subtitle">
+            Neu im Trading? Erfahrener Profi? Personalisierte<br
+              class="desktop-only"
+            />
+            Trading-Plattform, die Sie während Ihrer<br class="desktop-only" />
+            Investmentreise unterstützt.
+          </h2>
+          <div class="top-block_icons">
+            <div class="top-icon top-icon_1">
+              <img src="./images/top-icon_1_1.png" alt="top-icon_1_1" />
+              <img src="./images/top-icon_2_1.png" alt="top-icon_1_2" />
+            </div>
+            <div class="top-icon top-icon_2">
+              <img src="./images/top-icon_2.png" alt="top-icon_2" />
+            </div>
+          </div>
+        </div>
+        <div id="regForm" class="top__form_wrapper js-scroll">
+          <div class="top__form_title">Jetzt mit dem Handel beginnen</div>
+          <div id="main-form-wrapper-1" class="main-form-wrapper">
+            <div id="lead-form-1" class="lead-form">
+              <form
+                method="post"
+                form-pattern="single_step"
+                action=""
+                class="lead-form__body sv-skin"
+                onsubmit="event.preventDefault()"
+                novalidate=""
+              >
+                <div class="lead-form__input-group">
+                  <div class="lead-form__row lead-form__row_first-name">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_first-name"
+                    >
+                      <input
+                        type="text"
+                        name="full_name"
+                        id="full_name"
+                        class="lead-form__input lead-form__input_full-name required-field"
+                        validaterule="fullname"
+                        placeholder="Vollständiger Name"
+                        value=""
+                        maxlength="50"
+                      />
+                      <label for="full_name" class="form__label"
+                      >Vollständiger Name
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Vollständiger Name (Pflichtfeld)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_fullname"
+                      >
+                        Bitte geben Sie einen gültigen Vor- und Nachnamen ein
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lead-form__row lead-form__row_email">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_user-email"
+                    >
+                      <input
+                        type="email"
+                        name="user_email"
+                        id="user_email"
+                        class="lead-form__input user_email required-field"
+                        validaterule="email"
+                        placeholder="E-Mail"
+                        value=""
+                        maxlength="255"
+                      />
+                      <label for="user_email" class="form__label"
+                      >E-Mail
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        E-Mail (Pflichtfeld)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_email-regex"
+                      >
+                        Ungültig. Verwenden Sie:name@domain.xxx
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_email-existing"
+                      >
+                        Bereits registriert. Ändern oder anmelden
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_county-phone">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_prefix"
+                      data-iso=""
+                    >
+                      <div class="lead-form__dcl-trigger"></div>
+                      <input
+                        type="text"
+                        readonly="readonly"
+                        name="country_prefix"
+                        id="country_prefix"
+                        class="lead-form__input lead-form__input_country-prefix"
+                        placeholder="Præfiks"
+                        value=""
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <div class="lead-form__dcl">
+                        <div class="lead-form__dcl-inner"></div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="country"
+                        class="lead-form__input lead-form__input_country required-field"
+                        value=""
+                        validaterule="country"
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Wählen Sie ein Land
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_country-restricted"
+                      >
+                        Ihr Standort wird noch nicht unterstützt
+                      </div>
+                    </div>
+                    <div
+                      class="lead-form__data-item lead-form__data-item_phone"
+                    >
+                      <input
+                        type="tel"
+                        name="phone_num"
+                        id="phone_num"
+                        class="lead-form__input lead-form__input_phone-num required-field"
+                        validaterule="phone"
+                        placeholder="********"
+                        value=""
+                        maxlength="10"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Telefonnummer (Pflichtfeld)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_phone-short"
+                      >
+                        Geben Sie eine gültige Telefonnummer ein
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_phone-regex"
+                      >
+                        Nur Ziffern
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_password">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_user-password"
+                    >
+                      <input
+                        type="password"
+                        name="pw"
+                        id="password"
+                        class="lead-form__input password required-field"
+                        validaterule="password"
+                        placeholder="Passwort"
+                        value=""
+                        maxlength="24"
+                      />
+                      <label for="password" class="form__label"
+                      >Passwort
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Passwort erforderlich
+                      </div>
+                      <div class="lead-form__tooltip lead-form__tooltip_pw_invalid">
+                        Bitte geben Sie ein gültiges Passwort ein
+                      </div>
+                      <div class="pw-tooltip"></div>
+                      <ul class="validation-rules match">
+                        <li>8-24 Zeichen</li>
+                        <li>
+                          Muss mindestens zwei der folgenden drei enthalten:
+                          Kleinbuchstaben, Großbuchstaben und Zahlen
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  class="language"
+                  name="language"
+                  value="de"
+                />
+                <div class="lead-form__row lead-form__row_last"></div>
+
+                <div
+                  class="lead-form__data-item lead-form__data-item_global-error"
+                >
+                  <div
+                    class="lead-form__tooltip lead-form__tooltip_global-error"
+                  >
+                    <p>
+                      Wir haben ein technisches Problem, an dessen Lösung wir so
+                      schnell wie möglich arbeiten.
+                    </p>
+                    <p>Bitte versuchen Sie es später erneut</p>
+                  </div>
+                </div>
+                <div class="lead-form__row lead-form__row_gdpr">
+                  <div class="lead-form__data-item lead-form__data-item_gdpr">
+                    <div class="lead-form__gdpr">
+                      <label for="gdpr-1" class="gdpr-label checked">
+                        <input
+                                id="gdpr-1"
+                                validaterule="checkbox"
+                                type="checkbox"
+                                name="gdpr"
+                                class="lead-form__gdpr-checkbox required-field"
+                                checked=""
+                        />
+
+                        <span class="gdpr-text"
+                        >Ich habe die Datenschutzrichtlinie und die Geschäftsbedingungen gelesen und akzeptiert. Ich stimme dem Erhalt von Werbematerialien zu.</span
+                        >
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip-gdpr">
+                        Um fortzufahren, müssen Sie unseren Richtlinien zustimmen
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="lead-form__submit lead-form-submit"
+                >
+                  Jetzt starten
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="top__form_text top__form_text_1">
+            Investoren müssen mindestens 18 Jahre alt sein. Mindesteinzahlung von 250 EUR.
+          </div>
+          <div class="top__form_text top__form_text_2">
+            Ihr Kapital ist möglicherweise gefährdet. CFD-Privatkundenkonten verlieren im Allgemeinen Geld.
+          </div>
+          <div class="top__form_payments">
+            <img
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/payments.svg"
+              alt="payments"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block">
+      <div class="container">
+        <div class="article-block__inner">
+          <div class="article-block__title-group">
+            <h3 class="article-block__title">
+              Alles, was Sie zum <br class="desktop-only helper" />
+              Trading brauchen
+            </h3>
+            <p class="article-block__text">
+              Treten Sie unserer erstklassigen Trading-Plattform bei, die darauf
+              ausgelegt ist, Sie schnellstmöglich ins<br
+                class="desktop-only helper"
+              />
+              Trading zu bringen. Mit intuitiver Bedienung, leistungsstarken
+              Tools und einer Vielzahl von<br class="desktop-only helper" />
+              Lernressourcen.
+            </p>
+          </div>
+          <div class="article-block__content">
+            <img
+              src="./images/article-img.png"
+              alt="article-img"
+              class="article-img"
+            />
+            <div class="article-block__descr">
+              <div class="article-block__item block_item_1">
+                <img src="./images/article-icon_1.svg" alt="article-icon" />
+                <div class="item-text__block">
+                  <h3 class="item__title">
+                    Intuitive Trading-<br class="mobile-only" />Plattform
+                  </h3>
+                  <p class="item__text">
+                    Zugang zu Märkten und Handel mit Leichtigkeit, egal wo Sie
+                    sind. Erleben Sie unvergleichliches Trading mit
+                    Experten-Support, über eine leicht zu meisternde Plattform.
+                  </p>
+                </div>
+              </div>
+
+              <div class="article-block__item block_item_2">
+                <img src="./images/article-icon_2.svg" alt="article-icon" />
+                <div class="item-text__block">
+                  <h3 class="item__title">Reichhaltiges Bildungserlebnis</h3>
+                  <p class="item__text">
+                    Verbessern Sie Ihr Trading mit unseren
+                    Entscheidungs-unterstützenden Tools - tägliche
+                    Marktübersicht, Asset-Analyse, Webinare und mehr.
+                  </p>
+                </div>
+              </div>
+
+              <div class="article-block__item block_item_3">
+                <img src="./images/article-icon_3.svg" alt="article-icon" />
+                <div class="item-text__block">
+                  <h3 class="item__title">Dedizierte Unterstützung</h3>
+                  <p class="item__text">
+                    Erhalten Sie volle Unterstützung und Anleitung - von der
+                    Einrichtung Ihres Kontos bis zum Start Ihrer Trading-Reise.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article-block_bottom">
+        <div class="container">
+          <div class="article-block_bottom_group">
+            <a href="#regForm" class="article-bottom_btn js-scroll"
+              >Konto eröffnen</a
+            >
+            <p class="article-bottom_text">
+              Ihr Kapital kann gefährdet sein. CFD-Konten für Privatkunden
+              verlieren in der Regel Geld.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-block">
+      <div class="container">
+        <div class="bottom-block_inner">
+          <div class="bottom-block_text">
+            <h3 class="bottom-block_title">
+              Zuverlässigkeit und <br class="desktop-only" /><br
+                class="mobile-only"
+              />
+              Sicherheit stehen im<br class="mobile-only" />
+              Fokus
+            </h3>
+            <p class="bottom-block_subtitle">
+              Wir stellen sicher, dass unsere Plattform<br
+                class="mobile-only"
+              />
+              regulatorisch konform ist. Die<br class="mobile-only" />
+              Anwendung neuester<br class="mobile-only" />
+              Handelstechnologie maximiert die<br class="mobile-only" />
+              Zuverlässigkeit für unsere Kunden. Unser<br class="mobile-only" />
+              Kundensupport steht Ihnen 24/5 zur<br class="mobile-only" />
+              Verfügung, um Sie bei allem zu<br class="mobile-only" />
+              unterstützen, was Sie benötigen.
+            </p>
+          </div>
+        </div>
+
+        <div id="regForm2" class="top__form_wrapper bottom__form_wrapper">
+          <div class="top__form_title">Jetzt mit dem Handel beginnen</div>
+          <div id="main-form-wrapper-2" class="main-form-wrapper">
+            <div id="lead-form-2" class="lead-form">
+              <form
+                      method="post"
+                      form-pattern="single_step"
+                      action=""
+                      class="lead-form__body sv-skin"
+                      onsubmit="event.preventDefault()"
+                      novalidate=""
+              >
+                <div class="lead-form__input-group">
+                  <div class="lead-form__row lead-form__row_first-name">
+                    <div
+                            class="lead-form__data-item lead-form__data-item_first-name"
+                    >
+                      <input
+                              type="text"
+                              name="full_name"
+                              id="full_name2"
+                              class="lead-form__input lead-form__input_full-name required-field"
+                              validaterule="fullname"
+                              placeholder="Vollständiger Name"
+                              value=""
+                              maxlength="50"
+                      />
+                      <label for="full_name2" class="form__label"
+                      >Vollständiger Name
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Vollständiger Name (Pflichtfeld)
+                      </div>
+                      <div
+                              class="lead-form__tooltip lead-form__tooltip_fullname"
+                      >
+                        Bitte geben Sie einen gültigen Vor- und Nachnamen ein
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lead-form__row lead-form__row_email">
+                    <div
+                            class="lead-form__data-item lead-form__data-item_user-email"
+                    >
+                      <input
+                              type="email"
+                              name="user_email"
+                              id="user_email2"
+                              class="lead-form__input user_email required-field"
+                              validaterule="email"
+                              placeholder="E-Mail"
+                              value=""
+                              maxlength="255"
+                      />
+                      <label for="user_email2" class="form__label"
+                      >E-Mail
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        E-Mail (Pflichtfeld)
+                      </div>
+                      <div
+                              class="lead-form__tooltip lead-form__tooltip_email-regex"
+                      >
+                        Ungültig. Verwenden Sie:name@domain.xxx
+                      </div>
+                      <div
+                              class="lead-form__tooltip lead-form__tooltip_email-existing"
+                      >
+                        Bereits registriert. Ändern oder anmelden
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_county-phone">
+                    <div
+                            class="lead-form__data-item lead-form__data-item_prefix"
+                            data-iso=""
+                    >
+                      <div class="lead-form__dcl-trigger"></div>
+                      <input
+                              type="text"
+                              readonly="readonly"
+                              name="country_prefix"
+                              id="country_prefix2"
+                              class="lead-form__input lead-form__input_country-prefix"
+                              placeholder="Præfiks"
+                              value=""
+                              tabindex="-1"
+                              autocomplete="off"
+                      />
+                      <div class="lead-form__dcl">
+                        <div class="lead-form__dcl-inner"></div>
+                      </div>
+                      <input
+                              type="hidden"
+                              name="country"
+                              class="lead-form__input lead-form__input_country required-field"
+                              value=""
+                              validaterule="country"
+                              tabindex="-1"
+                              autocomplete="off"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Wählen Sie ein Land
+                      </div>
+                      <div
+                              class="lead-form__tooltip lead-form__tooltip_country-restricted"
+                      >
+                        Ihr Standort wird noch nicht unterstützt
+                      </div>
+                    </div>
+                    <div
+                            class="lead-form__data-item lead-form__data-item_phone"
+                    >
+                      <input
+                              type="tel"
+                              name="phone_num"
+                              id="phone_num2"
+                              class="lead-form__input lead-form__input_phone-num required-field"
+                              validaterule="phone"
+                              placeholder="********"
+                              value=""
+                              maxlength="10"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Telefonnummer (Pflichtfeld)
+                      </div>
+                      <div
+                              class="lead-form__tooltip lead-form__tooltip_phone-short"
+                      >
+                        Geben Sie eine gültige Telefonnummer ein
+                      </div>
+                      <div
+                              class="lead-form__tooltip lead-form__tooltip_phone-regex"
+                      >
+                        Nur Ziffern
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_password">
+                    <div
+                            class="lead-form__data-item lead-form__data-item_user-password"
+                    >
+                      <input
+                              type="password"
+                              name="pw"
+                              id="password2"
+                              class="lead-form__input password required-field"
+                              validaterule="password"
+                              placeholder="Passwort"
+                              value=""
+                              maxlength="24"
+                      />
+                      <label for="password2" class="form__label"
+                      >Passwort
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Passwort erforderlich
+                      </div>
+                      <div class="lead-form__tooltip lead-form__tooltip_pw_invalid">
+                        Bitte geben Sie ein gültiges Passwort ein
+                      </div>
+                      <div class="pw-tooltip"></div>
+                      <ul class="validation-rules match">
+                        <li>8-24 Zeichen</li>
+                        <li>
+                          Muss mindestens zwei der folgenden drei enthalten:
+                          Kleinbuchstaben, Großbuchstaben und Zahlen
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <input
+                        type="hidden"
+                        class="language"
+                        name="language"
+                        value="de"
+                />
+                <div class="lead-form__row lead-form__row_last"></div>
+
+                <div
+                        class="lead-form__data-item lead-form__data-item_global-error"
+                >
+                  <div
+                          class="lead-form__tooltip lead-form__tooltip_global-error"
+                  >
+                    <p>
+                      Wir haben ein technisches Problem, an dessen Lösung wir so
+                      schnell wie möglich arbeiten.
+                    </p>
+                    <p>Bitte versuchen Sie es später erneut</p>
+                  </div>
+                </div>
+                <div class="lead-form__row lead-form__row_gdpr">
+                  <div class="lead-form__data-item lead-form__data-item_gdpr">
+                    <div class="lead-form__gdpr">
+                      <label for="gdpr-2" class="gdpr-label checked">
+                        <input
+                                id="gdpr-2"
+                                validaterule="checkbox"
+                                type="checkbox"
+                                name="gdpr"
+                                class="lead-form__gdpr-checkbox required-field"
+                                checked=""
+                        />
+
+                        <span class="gdpr-text"
+                        >Ich habe die Datenschutzrichtlinie und die Geschäftsbedingungen gelesen und akzeptiert. Ich stimme dem Erhalt von Werbematerialien zu.</span
+                        >
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip-gdpr">
+                        Um fortzufahren, müssen Sie unseren Richtlinien zustimmen
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                        type="submit"
+                        class="lead-form__submit lead-form-submit"
+                >
+                  Jetzt starten
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="top__form_text top__form_text_1">
+            Investoren müssen mindestens 18 Jahre alt sein. Mindesteinzahlung von 250 EUR.
+          </div>
+          <div class="top__form_text top__form_text_2">
+            Ihr Kapital ist möglicherweise gefährdet. CFD-Privatkundenkonten verlieren im Allgemeinen Geld.
+          </div>
+          <div class="top__form_payments">
+            <img
+                    src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/payments.svg"
+                    alt="payments"
+            />
+          </div>
+        </div>
+
+        <div class="bottom-icons">
+          <div class="bottom-icon__item">
+            <img src="./images/bottom-icon_1.svg" alt="bottom-icon" />
+            <div class="bottom-icon__text">
+              <h4 class="icon__title">Reguliert</h4>
+              <p class="icon__text">
+                Unsere Plattform ist reguliert, damit Sie sich auf Ihr Trading
+                konzentrieren können.
+              </p>
+            </div>
+          </div>
+
+          <div class="bottom-icon__item">
+            <img src="./images/bottom-icon_2.svg" alt="botton-icon" />
+            <div class="bottom-icon__text">
+              <h4 class="icon__title">Zahlungsmethoden</h4>
+              <p class="icon__text">
+                Wählen Sie die für Sie bequemste Zahlungsmethode.
+              </p>
+            </div>
+          </div>
+
+          <div class="bottom-icon__item">
+            <img src="./images/bottom-icon_3.svg" alt="bottom-icon" />
+            <div class="bottom-icon__text">
+              <h4 class="icon__title">Kundensupport</h4>
+              <p class="icon__text">Wir sind bei jedem Schritt für Sie da.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/bottom-img.png"
+        alt="bottom-image"
+        class="bottom-img"
+      />
+    </section>
+
+    <footer class="footer">
+      <div class="footer-payment">
+        <div class="container">
+          <div class="footer-payment__list">
+            <img
+              class="footer-payment_d"
+              src="./images/payments.png"
+              alt="payments"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-actions">
+        <div class="container footer-container">
+          <div class="apps footer__apps"></div>
+          <div class="footer-actions__brand">
+            <img
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/logo-f.svg"
+            />
+          </div>
+
+          <div class="account account_footer">
+            <div class="footer-buttons">
+              <a href="#regForm" class="js-scroll tradeeu-button1"
+                >Eröffnen Sie ein Konto
+              </a>
+            </div>
+            <div>
+              <p class="risk-warning-small">
+                Ihr Kapital ist möglicherweise gefährdet. CFD-Privatkundenkonten
+                <br class="desktop-only" />
+                verlieren im Allgemeinen Geld.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <div class="container footer-container">
+          <ul class="footer-nav js-footer-nav">
+            <li class="menu-item menu-item-has-children">
+              <a class="menu-title">FAQ</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a class="menu-title">Unternehmen</a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/about-us/">Über uns</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/why-tradeeu/"
+                    >Warum TradeEU</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/contact-us/">Kontakt</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a class="menu-title">Handel</a>
+              <ul class="sub-menu">
+                <li class="menu-item menu-item-8185">
+                  <a href="https://www.tradeeu.com/account-types/"
+                    >Kontoarten</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/rollover-dates/"
+                    >Rollover-Termine</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/trading-hours-and-holidays/"
+                    >Handelszeiten und Feiertage</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/economic-calendar/"
+                    >Wirtschaftskalender</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/payment-methods/"
+                    >Zahlungsmethoden</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a class="menu-title">Wissens-Center </a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/knowledge-center-faq/"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/knowledge-center-glossary/"
+                    >Glossar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="https://www.tradeeu.com/legal/">Rechtliche dokumente</a>
+            </li>
+            <li class="menu-item">
+              <a href="https://www.tradeeu.com/partners/">Partner</a>
+            </li>
+          </ul>
+          <div class="footer-aside">
+            <div class="footer-regulator">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/footer-reg-1.svg"
+              />
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/footer-reg-2.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <div class="footer-legal__container container">
+          <div class="textwidget">
+            <div class="textwidget custom-html-widget">
+              Risikowarnung:
+            </div>
+          </div>
+          <div class="textwidget">
+            <br />❗CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren. 74%-89% der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter. Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Sie sollten sicherstellen, dass Sie aufgrund Ihres Wohnsitzlandes Produkte von TradeEU.com handeln dürfen. Bitte stellen Sie sicher, dass Sie mit der <a href="https://www.tradeeu.com/risk-disclosure-policy/">Risikoaufklärung des Unternehmens</a> vertraut sind.
+          </div>
+          <div class="textwidget">
+            <br />Die Informationen auf dieser Website richten sich nicht an Einwohner der Vereinigten Staaten, Kanada, Iran, Japan und sind nicht für die Verbreitung und Nutzung durch eine Person in einem Land oder einer Gerichtsbarkeit bestimmt, in dem eine solche Verbreitung gegen geltendes Recht oder Vorschriften verstoßen würde.
+          </div>
+          <div class="textwidget">
+            <br />Alle Informationen/Artikel/Materialien/Inhalte, die von TradeEU auf dieser Website bereitgestellt oder gezeigt werden, sind ausschließlich zu Bildungszwecken bestimmt und stellen keine Anlageberatung dar und/oder Beratung darüber, wie der Kunde handeln soll. Obwohl TradeEU auf die Richtigkeit dieser Informationen geachtet hat, kann TradeEU nicht für Auslassungen/Fehler/Fehlberechnungen verantwortlich gemacht werden und kann nicht für die Richtigkeit der hierin enthaltenen Materialien und Informationen garantieren. Jegliches Vertrauen, das Sie in solche Materialien setzen, geschieht daher auf Ihr eigenes Risiko. Bitte beachten Sie, dass die Verantwortung für die Verwendung und/oder das Vertrauen auf solche Materialien bei dem Kunden liegt und TradeEU keine Verantwortung für Verluste oder Schäden übernimmt, einschließlich, aber nicht beschränkt auf Gewinnausfälle, die direkt oder indirekt aus der Verwendung solcher oder dem Vertrauen auf solche Informationen entstehen können.
+          </div>
+          <div class="textwidget">
+            <br />TradeEU ist der Handelsname von Titanedge Securities Ltd mit der Registrierungsnummer HE411909, die von der Cyprus Securities and Exchange Commission unter der Lizenznummer 405/21 reguliert und zugelassen ist.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-frame">
+      <div class="risk-warning">
+        <div class="container">
+          <div class="risk-warning__content">
+            <div class="risk-warning__content">
+              ❗Risikowarnung: ❗CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren. 74-89% der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter. Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="scripts/main.js"></script>
+    <script src="scripts/footer.js"></script>
+  </body>
+</html>
