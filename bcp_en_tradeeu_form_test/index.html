@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" data-locale="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="TradeEU | A leading trading platform for Trading Global Financial Assets"
+    />
+    <title>
+      TradeEU | A leading trading platform for Trading Global Financial Assets
+    </title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/favicon.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="top__wrapper">
+      <div class="container top__container">
+        <div class="top__logo top__logo_mobile">
+          <img
+            src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/logo.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="top__image">
+          <img
+            src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/top.png"
+            alt="top"
+          />
+        </div>
+        <div class="top__content">
+          <div class="top__logo top__logo_desktop">
+            <img
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/logo.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="top__title">
+            <p>
+              Learn to trade<br class="desktop-only" />
+              BCP CFDs with a registered broker
+            </p>
+          </div>
+        </div>
+        <div id="regForm" class="top__form_wrapper js-scroll">
+          <div class="top__form_title">Start trading now</div>
+          <div id="main-form-wrapper-1" class="main-form-wrapper">
+            <div id="lead-form-1" class="lead-form">
+              <form
+                method="post"
+                form-pattern="single_step"
+                action=""
+                class="lead-form__body sv-skin"
+                onsubmit="event.preventDefault()"
+                novalidate=""
+              >
+                <div class="lead-form__input-group">
+                  <div class="lead-form__row lead-form__row_first-name">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_first-name"
+                    >
+                      <input
+                        type="text"
+                        name="full_name"
+                        id="full_name"
+                        class="lead-form__input lead-form__input_full-name required-field"
+                        validaterule="fullname"
+                        placeholder="Full Name"
+                        value=""
+                        maxlength="50"
+                      />
+                      <label for="full_name" class="form__label"
+                      >Full Name
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Full name (mandatory)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_fullname"
+                      >
+                        Please enter a valid first and last name
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lead-form__row lead-form__row_email">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_user-email"
+                    >
+                      <input
+                        type="email"
+                        name="user_email"
+                        id="user_email"
+                        class="lead-form__input user_email required-field"
+                        validaterule="email"
+                        placeholder="Email"
+                        value=""
+                        maxlength="255"
+                      />
+                      <label for="user_email" class="form__label">Email </label>
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Email address (mandatory)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_email-regex"
+                      >
+                        Invalid. Use format: username@domain.xxx
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_email-existing"
+                      >
+                        Already registered. Choose another or login
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_county-phone">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_prefix"
+                      data-iso=""
+                    >
+                      <div class="lead-form__dcl-trigger"></div>
+                      <input
+                        type="text"
+                        readonly="readonly"
+                        name="country_prefix"
+                        id="country_prefix"
+                        class="lead-form__input lead-form__input_country-prefix"
+                        placeholder="Prefix"
+                        value=""
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <div class="lead-form__dcl">
+                        <div class="lead-form__dcl-inner"></div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="country"
+                        class="lead-form__input lead-form__input_country required-field"
+                        value=""
+                        validaterule="country"
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Select Country
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_country-restricted"
+                      >
+                        Your Location is not yet supported
+                      </div>
+                    </div>
+                    <div
+                      class="lead-form__data-item lead-form__data-item_phone"
+                    >
+                      <input
+                        type="tel"
+                        name="phone_num"
+                        id="phone_num"
+                        class="lead-form__input lead-form__input_phone-num required-field"
+                        validaterule="phone"
+                        placeholder="********"
+                        value=""
+                        maxlength="10"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Phone number (mandatory)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_phone-short"
+                      >
+                        Enter a valid phone number
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_phone-regex"
+                      >
+                        Numbers only
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_password">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_user-password"
+                    >
+                      <label for="password" class="form__label"
+                        >Password
+                      </label>
+                      <input
+                        type="password"
+                        name="pw"
+                        id="password"
+                        class="lead-form__input password required-field"
+                        validaterule="password"
+                        placeholder="Password"
+                        value=""
+                        maxlength="24"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Password required
+                      </div>
+                      <div class="lead-form__tooltip lead-form__tooltip_pw_invalid">
+                        Please enter a valid password
+                      </div>
+                      <div class="pw-tooltip"></div>
+                      <ul class="validation-rules match">
+                        <li>8-24 characters</li>
+                        <li>
+                          Must contain at least two of the following three:
+                          lowercase, uppercase, and numbers
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  class="language"
+                  name="language"
+                  value="en"
+                />
+                <div class="lead-form__row lead-form__row_last"></div>
+
+                <div
+                  class="lead-form__data-item lead-form__data-item_global-error"
+                >
+                  <div
+                    class="lead-form__tooltip lead-form__tooltip_global-error"
+                  >
+                    We are experiencing a technical issue that we are working to
+                    resolve as quickly as possible.<br />
+                    Please try again later
+                  </div>
+                </div>
+                <div class="lead-form__row lead-form__row_gdpr">
+                  <div class="lead-form__data-item lead-form__data-item_gdpr">
+                    <div class="lead-form__gdpr">
+                      <label for="gdpr-1" class="gdpr-label checked">
+                        <input
+                                id="gdpr-1"
+                                validaterule="checkbox"
+                                type="checkbox"
+                                name="gdpr"
+                                class="lead-form__gdpr-checkbox required-field"
+                        />
+
+                        <span class="gdpr-text"
+                        >I have read and accepted the Privacy Policy, the Terms and conditions, I agree to receive promotional materials.</span
+                        >
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip-gdpr">
+                        To continue, you must accept our policies.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="lead-form__submit lead-form-submit"
+                >
+                  Start now
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="top__form_text top__form_text_1">
+            Must be 18 years old or older to invest. Minimum initial deposit 250 EUR.
+          </div>
+          <div class="top__form_text top__form_text_2">
+            Your capital may be at risk. CFD-retail client accounts generally lose money.
+          </div>
+          <div class="top__form_payments">
+            <img
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/payments.svg"
+              alt="payments"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features__wrapper">
+      <div class="container">
+        <div class="features__title">
+          <p>
+            The power<br class="tablet-only" />
+            of trading choice
+          </p>
+        </div>
+        <div class="features__subtitle">
+          <p>
+            With TradeEU, a licensed online broker that provides favorable
+            conditions for trading CFDs on BCP stocks, you can learn to invest
+            trading smartly and securely with the platform that endows traders
+            with the following trailblazing features:
+          </p>
+        </div>
+        <div class="features__list">
+          <div class="features__item">
+            <div class="features__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/features-icon-1.svg"
+                alt="features-icon-1.svg"
+              />
+            </div>
+            <div class="features__item-text">
+              <p>Multilingual support service</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/features-icon-2.svg"
+                alt="features-icon-2.svg"
+              />
+            </div>
+            <div class="features__item-text">
+              <p>Flexible platform for all device types</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/features-icon-3.svg"
+                alt="features-icon-3.svg"
+              />
+            </div>
+            <div class="features__item-text">
+              <p>MT5 Terminal connection</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/features-icon-4.svg"
+                alt="features-icon-4.svg"
+              />
+            </div>
+            <div class="features__item-text">
+              <p>State-of-the-art educational hub</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/features-icon-5.svg"
+                alt="features-icon-5.svg"
+              />
+            </div>
+            <div class="features__item-text">
+              <p>Lightning- fast execution</p>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/features-icon-6.svg"
+                alt="features-icon-6.svg"
+              />
+            </div>
+            <div class="features__item-text">
+              <p>Advanced tools to manage risks</p>
+            </div>
+          </div>
+        </div>
+        <a class="features__button js-scroll" href="#regForm"
+          >LEARN FROM EXPERTS TODAY</a
+        >
+      </div>
+    </section>
+
+    <section class="stepper__wrapper">
+      <div class="container">
+        <div class="stepper__title">
+          <p>Starting is easy</p>
+        </div>
+        <div class="stepper__subtitle">
+          <p>You can enter the world of trading BCP CFDs in just 3 Steps:</p>
+        </div>
+        <div class="stepper__list">
+          <div class="stepper__item">
+            <div class="stepper__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/stepper-icon-1.svg"
+                alt="stepper-icon-1.svg"
+              />
+            </div>
+            <div class="stepper__item-text">
+              <p>Submit the required personal data</p>
+            </div>
+          </div>
+          <div class="stepper__item">
+            <div class="stepper__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/stepper-icon-2.svg"
+                alt="stepper-icon-2.svg"
+              />
+            </div>
+            <div class="stepper__item-text">
+              <p>Get your registration form approved</p>
+            </div>
+          </div>
+          <div class="stepper__item">
+            <div class="stepper__item-icon">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/stepper-icon-3.svg"
+                alt="stepper-icon-3.svg"
+              />
+            </div>
+            <div class="stepper__item-text">
+              <p>
+                Start trying CFDs on<br class="desktop-only" />
+                stocks
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#regForm" class="stepper__button js-scroll">
+          REGISTE-SE E COMECE HOJE
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-payment">
+        <div class="container">
+          <div class="footer-payment__list">
+            <img
+              class="footer-payment_d"
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/footer-payments-d.svg"
+              alt="payments"
+            />
+            <img
+              class="footer-payment_t"
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/footer-payments-t.svg"
+              alt="payments"
+            />
+            <img
+              class="footer-payment_m"
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/footer-payments-m.svg"
+              alt="payments"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-actions">
+        <div class="container footer-container">
+          <div class="apps footer__apps"></div>
+          <div class="footer-actions__brand">
+            <img
+              src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/logo-f.svg"
+            />
+          </div>
+
+          <div class="account account_footer">
+            <div class="footer-buttons">
+              <a href="https://www.tradeeu.com/" class="tradeeu-button1"
+                >Open an Account
+              </a>
+
+              <a href="https://www.tradeeu.com/" class="tradeeu-button2"
+                >Try Our Platform
+              </a>
+            </div>
+            <div>
+              <p class="risk-warning-small">
+                Your capital may be at risk. CFD-retail client accounts
+                generally lose money.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <div class="container footer-container">
+          <ul class="footer-nav js-footer-nav">
+            <li class="menu-item menu-item-has-children">
+              <a class="menu-title">COMPANY</a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/about-us/">About Us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/why-tradeeu/"
+                    >Why TradeEU?</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/contact-us/">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a class="menu-title">Trading</a>
+              <ul class="sub-menu">
+                <li class="menu-item menu-item-8185">
+                  <a href="https://www.tradeeu.com/account-types/"
+                    >Account Types</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/rollover-dates/"
+                    >Rollover Dates</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/trading-hours-and-holidays/"
+                    >Trading Hours and Holidays</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/economic-calendar/"
+                    >Economic Calendar</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/payment-methods/"
+                    >Payment Methods</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a class="menu-title">KNOWLEDGE CENTER </a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/knowledge-center-faq/"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="https://www.tradeeu.com/knowledge-center-glossary/"
+                    >Glossary</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="https://www.tradeeu.com/legal/">LEGAL DOCUMENTATION</a>
+            </li>
+          </ul>
+          <div class="footer-aside">
+            <div class="footer-regulator">
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/footer-reg-1.svg"
+              />
+              <img
+                src="https://storage.googleapis.com/marketing-automation-cdn-lp.tradeeu.com/bcp/images/footer-reg-2.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <div class="container">
+          <div class="textwidget">
+            CFDs are complex instruments and come with a high risk of losing
+            money rapidly due to leverage.
+            <strong>74%-89%</strong> of retail investor accounts lose money when
+            trading CFDs with this provider. You should consider whether you
+            understand how CFDs work and whether you can afford to take the high
+            risk of losing your money. You should make sure that based on your
+            country of residence you are permitted to trade products of
+            Tradeeu.com. Please make sure you are familiar with the Company’s
+            risk disclosure.
+          </div>
+          <div class="textwidget">
+            <br />The information on this website is not targeted at residents
+            of the United States, Canada, Israel, Iran, Japan and is not
+            intended for distribution to, or use by, any person in any country
+            or jurisdiction where such distribution or use would be contrary to
+            applicable law or regulation.
+          </div>
+          <div class="textwidget">
+            <br />Any information/article/material/content provided by TradeEU
+            or is shown on its website is intended to be used solely for
+            educational purposes and does not constitute investment advice
+            and/or consultation on how the client should trade. Although TradeEU
+            has taken care to ensure that the content of such information is
+            accurate, it cannot be held responsible for any
+            omission/mistake/miscalculation and it cannot warrant the accuracy
+            of any material and information contained herein. Any reliance you
+            place on such material is therefore strictly at your own risk.
+            Please note that the responsibility for using and/or relying on such
+            material lies with the client and TradeEU accepts no responsibility
+            for any loss or damage including without limitation to any loss of
+            profit which may arise directly or indirectly from the use of or
+            reliance on such information.
+          </div>
+          <div class="textwidget">
+            <br />TradeEU is the trading name of
+            <strong
+              >Titanedge Securities Ltd with Registration Number HE411909
+              regulated and authorized by the Cyprus Securities and Exchange
+              Commission under license number 405/21.</strong
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-frame">
+      <div class="risk-warning">
+        <div class="container">
+          <div class="risk-warning__content">
+            <u>Risk Warning:</u>
+            CFDs are complex instruments and come with a high risk of losing
+            money rapidly due to leverage.
+            <b
+              >74-89% of retail investor accounts lose money when trading CFDs
+              with this provider.</b
+            >
+            You should consider whether you understand how CFDs work and whether
+            you can afford to take the high risk of losing your money.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="scripts/main.js"></script>
+    <script src="scripts/footer.js"></script>
+  </body>
+</html>
