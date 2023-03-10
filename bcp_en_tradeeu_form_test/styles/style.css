@@ -4260,7 +4260,7 @@ html[lang="ar"] .lead-form__tooltip_country-restricted {
 }
 
 .lead-form__data-item.error .gdpr-text:before {
-  border-color: red;
+  border-color: rgba(0,0,0,0);
 }
 
 .lead-form__data-item_user-password {
