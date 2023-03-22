@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-locale="en">
+<html lang="es" data-locale="ea">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,7 +30,7 @@
   <body>
     <div class="form__wrapper" id="regForm">
       <div class="form__wrapper-sticky">
-        <div class="form__title">Register</div>
+        <div class="form__title">Registro</div>
         <div id="main-form-wrapper-1" class="main-form-wrapper">
           <div id="lead-form-1" class="lead-form">
             <form
@@ -47,7 +47,7 @@
                           class="lead-form__data-item lead-form__data-item_first-name"
                   >
                     <label for="first_name" class="form__label"
-                    >First name</label
+                    >Nombre</label
                     >
                     <input
                             type="text"
@@ -55,15 +55,15 @@
                             id="first_name"
                             class="lead-form__input lead-form__input_first-name required-field"
                             validaterule="name"
-                            placeholder="e.g. John"
+                            placeholder="P. Ej. Juan"
                             value=""
                             maxlength="50"
                     />
                     <div class="lead-form__tooltip lead-form__tooltip_empty">
-                      First name (mandatory)
+                      Nombre de pila (obligatorio)
                     </div>
                     <div class="lead-form__tooltip lead-form__tooltip_name">
-                      Minimum two characters. Letters only
+                      Mínimo de dos caracteres. Solo letras
                     </div>
                   </div>
                 </div>
@@ -72,7 +72,7 @@
                           class="lead-form__data-item lead-form__data-item_last-name"
                   >
                     <label for="last_name" class="form__label"
-                    >Last name</label
+                    >Apellido</label
                     >
                     <input
                             type="text"
@@ -80,15 +80,15 @@
                             id="last_name"
                             class="lead-form__input lead-form__input_last-name required-field"
                             validaterule="name"
-                            placeholder="e.g. Lander"
+                            placeholder="P. Ej. Lander"
                             value=""
                             maxlength="50"
                     />
                     <div class="lead-form__tooltip lead-form__tooltip_empty">
-                      Last name (mandatory)
+                      Apellido (obligatorio)
                     </div>
                     <div class="lead-form__tooltip lead-form__tooltip_name">
-                      Minimum two characters. Letters only
+                      Mínimo de dos caracteres. Solo letras
                     </div>
                   </div>
                 </div>
@@ -96,35 +96,35 @@
                   <div
                           class="lead-form__data-item lead-form__data-item_user-email"
                   >
-                    <label for="user_email" class="form__label">E-mail</label>
+                    <label for="user_email" class="form__label">Correo electrónico</label>
                     <input
                             type="email"
                             name="user_email"
                             id="user_email"
                             class="lead-form__input user_email required-field"
                             validaterule="email"
-                            placeholder="sample@gmail.com"
+                            placeholder="P. Ej. name@gmail.com"
                             value=""
                             maxlength="255"
                     />
                     <div class="lead-form__tooltip lead-form__tooltip_empty">
-                      Email address (mandatory)
+                      Correo electrónico (obligatorio)
                     </div>
                     <div
                             class="lead-form__tooltip lead-form__tooltip_email-regex"
                     >
-                      Invalid. Use format: username@domain.xxx
+                      No válido. Formato: usuario@dominio.xxx
                     </div>
                     <div
                             class="lead-form__tooltip lead-form__tooltip_email-existing"
                     >
-                      Already registered. Choose another or login
+                      Ya registrado. Elige otro o inicia sesión
                     </div>
                   </div>
                 </div>
                 <div class="lead-form__row lead-form__row_county-phone">
                   <label for="phone_num" class="form__label"
-                  >Phone number</label
+                  >Número de Teléfono</label
                   >
                   <div
                           class="lead-form__data-item lead-form__data-item_prefix"
@@ -137,7 +137,7 @@
                             name="country_prefix"
                             id="country_prefix"
                             class="lead-form__input lead-form__input_country-prefix"
-                            placeholder="Prefix"
+                            placeholder="Prefijo"
                             value=""
                             tabindex="-1"
                             autocomplete="off"
@@ -155,12 +155,12 @@
                             autocomplete="off"
                     />
                     <div class="lead-form__tooltip lead-form__tooltip_empty">
-                      Select Country
+                      Seleccione un país (obligatorio)
                     </div>
                     <div
                             class="lead-form__tooltip lead-form__tooltip_country-restricted"
                     >
-                      Your Location is not yet supported
+                      Su ubicación aún no es compatible
                     </div>
                   </div>
                   <div
@@ -177,17 +177,17 @@
                             maxlength="10"
                     />
                     <div class="lead-form__tooltip lead-form__tooltip_empty">
-                      Phone number (mandatory)
+                      Teléfono (obligatorio)
                     </div>
                     <div
                             class="lead-form__tooltip lead-form__tooltip_phone-short"
                     >
-                      Enter a valid phone number
+                      Introduce un número de teléfono válido
                     </div>
                     <div
                             class="lead-form__tooltip lead-form__tooltip_phone-regex"
                     >
-                      Numbers only
+                      Solo numeros
                     </div>
                   </div>
                 </div>
@@ -196,14 +196,14 @@
                       type="hidden"
                       class="language"
                       name="language"
-                      value="en"
+                      value="es"
               />
               <div class="lead-form__row lead-form__row_last">
                 <button
                         type="submit"
                         class="lead-form__submit lead-form-submit"
                 >
-                  Get info
+                  Obtener información
                 </button>
               </div>
               <div class="lead-form__row lead-form__row_gdpr">
@@ -219,22 +219,22 @@
                               checked=""
                       />
                       <span class="gdpr-text"
-                      >I agree to the
-                        <a
-                                href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014611/3804fecf-capitalix_privacy_policy.pdf"
-                                target="_blank"
-                        >Privacy Policy</a
-                        >,
-                        <a
-                                href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014612/ecbf3c01-capitalix_terms-and-conditions.pdf"
-                                target="_blank"
-                        >Terms & Conditions</a
-                        >
-                        and to receive marketing material</span
+                      >Acepto la
+                            <a
+                                    href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014611/3804fecf-capitalix_privacy_policy.pdf"
+                                    target="_blank"
+                            >Política de privacidad</a
+                            >, los
+                            <a
+                                    href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014612/ecbf3c01-capitalix_terms-and-conditions.pdf"
+                                    target="_blank"
+                            >Términos y Condiciones</a
+                            >
+                             y recibir material publicitario</span
                       >
                     </label>
                     <div class="lead-form__tooltip lead-form__tooltip-gdpr">
-                      To continue, you must agree with our policies
+                      Para continuar, debe aceptar nuestras políticas
                     </div>
                   </div>
                 </div>
@@ -246,15 +246,14 @@
                         class="lead-form__tooltip lead-form__tooltip_global-error"
                 >
                   <p>
-                    We are experiencing a technical issue that we are working
-                    to resolve as quickly as possible.
+                    Estamos experimentando un problema técnico que estamos trabajando para resolver lo más rápido posible.
                   </p>
-                  <p>Please try again later</p>
+                  <p>Por favor, inténtelo de nuevo más tarde</p>
                 </div>
               </div>
             </form>
             <div class="form__text">
-              To invest you must be at least 18 years old.<br> Minimum required capital $250
+              Para invertir debe tener al menos 18 años.<br> Capital mínimo requerido: $250
             </div>
           </div>
         </div>

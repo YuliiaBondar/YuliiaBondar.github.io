@@ -1,9 +1,9 @@
 window.funnelOptions = {
-  lang: "en",
+  lang: "es",
   brand: 31,
   disableErrorPlaceholder: true,
   pathPrefix: "../../",
-  funnel_uri: "/cptlx_form_en",
+  funnel_uri: "/cptlx_form_es",
   funnel_atts: ["redirect_brand_on_step_1"],
 };
 
