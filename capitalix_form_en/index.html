@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-locale="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+      data-rh="true"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="true"
+      data-rh="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+      <div class="form__wrapper" id="regForm">
+        <div class="form__wrapper-sticky">
+          <div class="form__title">Register</div>
+          <div id="main-form-wrapper-1" class="main-form-wrapper">
+            <div id="lead-form-1" class="lead-form">
+              <form
+                method="post"
+                form-pattern="single_step"
+                action=""
+                class="lead-form__body sv-skin"
+                onsubmit="event.preventDefault()"
+                novalidate=""
+              >
+                <div class="lead-form__input-group">
+                  <div class="lead-form__row lead-form__row_first-name">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_first-name"
+                    >
+                      <label for="first_name" class="form__label"
+                        >First name</label
+                      >
+                      <input
+                        type="text"
+                        name="first_name"
+                        id="first_name"
+                        class="lead-form__input lead-form__input_first-name required-field"
+                        validaterule="name"
+                        placeholder="ej. Belen"
+                        value=""
+                        maxlength="50"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        First name (mandatory)
+                      </div>
+                      <div class="lead-form__tooltip lead-form__tooltip_name">
+                        Minimum two characters. Letters only
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_last-name">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_last-name"
+                    >
+                      <label for="last_name" class="form__label"
+                        >Last name</label
+                      >
+                      <input
+                        type="text"
+                        name="last_name"
+                        id="last_name"
+                        class="lead-form__input lead-form__input_last-name required-field"
+                        validaterule="name"
+                        placeholder="ej. García"
+                        value=""
+                        maxlength="50"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Last name (mandatory)
+                      </div>
+                      <div class="lead-form__tooltip lead-form__tooltip_name">
+                        Minimum two characters. Letters only
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_email">
+                    <div
+                      class="lead-form__data-item lead-form__data-item_user-email"
+                    >
+                      <label for="user_email" class="form__label">E-mail</label>
+                      <input
+                        type="email"
+                        name="user_email"
+                        id="user_email"
+                        class="lead-form__input user_email required-field"
+                        validaterule="email"
+                        placeholder="sample@gmail.com"
+                        value=""
+                        maxlength="255"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Email address (mandatory)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_email-regex"
+                      >
+                        Invalid. Use format: username@domain.xxx
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_email-existing"
+                      >
+                        Already registered. Choose another or login
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lead-form__row lead-form__row_county-phone">
+                    <label for="phone_num" class="form__label"
+                      >Phone number</label
+                    >
+                    <div
+                      class="lead-form__data-item lead-form__data-item_prefix"
+                      data-iso=""
+                    >
+                      <div class="lead-form__dcl-trigger"></div>
+                      <input
+                        type="text"
+                        readonly="readonly"
+                        name="country_prefix"
+                        id="country_prefix"
+                        class="lead-form__input lead-form__input_country-prefix"
+                        placeholder="Prefix"
+                        value=""
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <div class="lead-form__dcl">
+                        <div class="lead-form__dcl-inner"></div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="country"
+                        class="lead-form__input lead-form__input_country required-field"
+                        value=""
+                        validaterule="country"
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Select Country
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_country-restricted"
+                      >
+                        Your Location is not yet supported
+                      </div>
+                    </div>
+                    <div
+                      class="lead-form__data-item lead-form__data-item_phone"
+                    >
+                      <input
+                        type="tel"
+                        name="phone_num"
+                        id="phone_num"
+                        class="lead-form__input lead-form__input_phone-num required-field"
+                        validaterule="phone"
+                        placeholder="8719211"
+                        value=""
+                        maxlength="10"
+                      />
+                      <div class="lead-form__tooltip lead-form__tooltip_empty">
+                        Phone number (mandatory)
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_phone-short"
+                      >
+                        Enter a valid phone number
+                      </div>
+                      <div
+                        class="lead-form__tooltip lead-form__tooltip_phone-regex"
+                      >
+                        Numbers only
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  class="language"
+                  name="language"
+                  value="en"
+                />
+                <div class="lead-form__row lead-form__row_last">
+                  <button
+                    type="submit"
+                    class="lead-form__submit lead-form-submit"
+                  >
+                    Join now
+                  </button>
+                </div>
+                <div class="lead-form__row lead-form__row_gdpr">
+                  <div class="lead-form__data-item lead-form__data-item_gdpr">
+                    <div class="lead-form__gdpr">
+                      <label for="gdpr-1" class="gdpr-label checked">
+                        <input
+                          id="gdpr-1"
+                          validaterule="checkbox"
+                          type="checkbox"
+                          name="gdpr"
+                          class="lead-form__gdpr-checkbox required-field"
+                          checked=""
+                        />
+                        <span class="gdpr-text"
+                          >I agree to the
+                          <a
+                            href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014611/3804fecf-capitalix_privacy_policy.pdf"
+                            target="_blank"
+                            >Privacy Policy</a
+                          >,
+                          <a
+                            href="https://multisite-wp-uploads.capitalix.com/capitalix/wp-content/uploads/2021/02/24014612/ecbf3c01-capitalix_terms-and-conditions.pdf"
+                            target="_blank"
+                            >Terms & Conditions</a
+                          >
+                          and to receive marketing material</span
+                        >
+                      </label>
+                      <div class="lead-form__tooltip lead-form__tooltip-gdpr">
+                        To continue, you must agree with our policies
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="lead-form__data-item lead-form__data-item_global-error"
+                >
+                  <div
+                    class="lead-form__tooltip lead-form__tooltip_global-error"
+                  >
+                    <p>
+                      We are experiencing a technical issue that we are working
+                      to resolve as quickly as possible.
+                    </p>
+                    <p>Please try again later</p>
+                  </div>
+                </div>
+              </form>
+              <div class="form__text">
+                To invest you must be at least 18 years old. <br />
+                Minimum required capital $250
+              </div>
+            </div>
+          </div>
+          <div class="form__image">
+            <img src="images/form-image.png" alt="payments" />
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
