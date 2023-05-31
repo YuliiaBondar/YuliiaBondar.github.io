@@ -138,8 +138,10 @@ ul {
     vertical-align: baseline;
 }
 body {
+    direction: rtl;
+    text-align: right;
     line-height: 1;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Tajawal", sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscal;
@@ -213,6 +215,10 @@ html {
 svg {
     overflow: hidden;
 }
+.input__rtl {
+    text-align: right;
+    direction: ltr;
+}
 .form {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 50px;
     border-radius: 10px;
@@ -232,7 +238,7 @@ svg {
     line-height: 18px;
 }
 .form__input {
-    font-family: Montserrat, sans-serif;
+    font-family: Tajawal, sans-serif;
     max-width: 100%;
     width: 100%;
     font-size: 13px;
@@ -260,7 +266,7 @@ svg {
     width: 100%;
 }
 .form__btn {
-    font-family: Montserrat, sans-serif;
+    font-family: Tajawal, sans-serif;
     width: 100%;
     height: 56px;
     position: relative;
@@ -315,6 +321,7 @@ svg {
     padding: 15px;
     top: -20px;
     left: -20px;
+    direction: ltr;
 }
 .lds-ring div {
     box-sizing: border-box;
@@ -417,7 +424,7 @@ svg {
     color: rgb(255, 255, 255);
     font-weight: bold;
     cursor: pointer;
-    font-family: Montserrat, sans-serif;
+    font-family: Tajawal, sans-serif;
     font-size: 16px;
 }
 
