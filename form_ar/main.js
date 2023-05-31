@@ -2,23 +2,23 @@ var Submit = function () {
     var errorMessages = {
         name: {
             regExp: /^[^\d\p{P}]{3,}$/,
-            empty: "Mandatory field",
-            notValid: "Letters only, minimum length 3"
+            empty: "الاسم الأول (إلزامي)",
+            notValid: "أحرف فقط ، الحد الأدنى للطول 3"
         },
         surname: {
             regExp: /^[^\d\p{P}]{3,}$/,
-            empty: "Mandatory field",
-            notValid: "Letters only, minimum length 3"
+            empty: "اسم العائلة (إلزامي)",
+            notValid: "أحرف فقط ، الحد الأدنى للطول 3"
         },
         phone: {
             regExp: /^[\d+()]{8,}$/,
-            empty: "Mandatory field",
-            notValid: "'+' and numbers only, minimum length 8 digits"
+            empty: "رقم الهاتف (إلزامي)",
+            notValid: "'+' والأرقام فقط ، الحد الأدنى للطول 8 أرقام"
         },
         email: {
             regExp: /^[a-zA-Z0-9.’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/,
-            empty: "Mandatory field",
-            notValid: "Invalid. Use format: abc@domain.xxx"
+            empty: "بريد إلكتروني (إلزامي)",
+            notValid: "غير صالح. استخدم التنسيق :abc@domain.xxx"
         }
     };
 
@@ -71,7 +71,7 @@ var Submit = function () {
                         error: function () {
                             $('#reg_btn').html('إرسال');
                             setTimeout(function () {
-                                alert('We are experiencing a technical issue that we are working to resolve as quickly as possible. Please try again later.');
+                                alert('نواجه مشكلة فنية نعمل على حلها في أسرع وقت ممكن. الرجاء معاودة المحاولة في وقت لاحق');
                             }, 1000);
                             console.log(4);
                         }

@@ -3,22 +3,22 @@ var Submit = function () {
         name: {
             regExp: /^[^\d\p{P}]{3,}$/,
             empty: "Nombre de pila (obligatorio)",
-            notValid: "Letters only, minimum length 3"
+            notValid: "Solo letras, longitud mínima 3"
         },
         surname: {
             regExp: /^[^\d\p{P}]{3,}$/,
             empty: "Apellido (obligatorio)",
-            notValid: "Letters only, minimum length 3"
+            notValid: "Solo letras, longitud mínima 3"
         },
         phone: {
             regExp: /^[\d+()]{8,}$/,
             empty: "Teléfono (obligatorio)",
-            notValid: "'+' and numbers only, minimum length 8 digits"
+            notValid: "'+' y números solamente, longitud mínima de 8 dígitos"
         },
         email: {
             regExp: /^[a-zA-Z0-9.’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/,
             empty: "Correo electrónico (obligatorio)\n",
-            notValid: "Invalid. Use format: abc@domain.xxx"
+            notValid: "No válido. Formato: usuario@dominio.xxx, A-Z"
         }
     };
 
@@ -71,7 +71,7 @@ var Submit = function () {
                         error: function () {
                             $('#reg_btn').html('Enviar');
                             setTimeout(function () {
-                                alert('We are experiencing a technical issue that we are working to resolve as quickly as possible. Please try again later.');
+                                alert('Estamos teniendo un problema técnico que estamos procurando resolver a la brevedad. Por favor, inténtelo después.');
                             }, 1000);
                             console.log(4);
                         }
