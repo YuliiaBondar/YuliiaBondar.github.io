@@ -230,7 +230,7 @@ svg {
 }
 .form__label {
     display: block;
-    text-align: left;
+    text-align: right;
     color: rgb(55, 55, 55);
     font-weight: 400;
     margin-bottom: 4px;
