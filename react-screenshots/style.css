@@ -60,10 +60,25 @@ table {
   grid-template-columns: repeat(3, 1fr);
 }
 .screenshots-inner {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-  background: #efefef;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    background: #E5E5E5;
+    border: 1px solid black;
+}
+@media (max-width: 1270px) {
+    .screenshots-inner {
+        height: 300px;
+    }
+    .wrapper {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 767px) {
+    .screenshots {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .screenshots-title {
   font-weight: bold;
