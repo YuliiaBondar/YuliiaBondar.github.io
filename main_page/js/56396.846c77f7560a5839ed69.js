@@ -1,0 +1,2 @@
+"use strict";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[56396],{56396:(e,t,n)=>{n.d(t,{Z:()=>l});var r=n(2784),s=n(72175);const l=function(e){var t=e.fontsLink;return r.createElement(s.ql,null,r.createElement("link",{rel:"preconnect",href:"https://fonts.gstatic.com",crossOrigin:!0}),r.createElement("link",{rel:"preconnect",href:"https://fonts.googleapis.com",crossOrigin:!0}),r.createElement("link",{href:t,rel:"stylesheet"}))}}}]);
+//# sourceMappingURL=56396.js.map
