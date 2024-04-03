@@ -16,8 +16,7 @@ function loadImagesFromFolder(folder, targetElement) {
 
             // Проходимо по кожному зображенню та додаємо його на сторінку
             imageElements.forEach(imageElement => {
-                console.log(imageElement);
-                const imageUrl = folder + imageElement.getAttribute('href');
+                const imageUrl = imageElement.getAttribute('href');
                 const imageName = imageElement.textContent;
                 const image = document.createElement('img');
                 image.src = imageUrl;
