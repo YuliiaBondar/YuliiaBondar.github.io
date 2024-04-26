@@ -50,6 +50,10 @@ const filterAndDisplayTemplates = async () => {
 // Attach language change function to button clicks
 document.querySelectorAll('.button').forEach(button => {
   button.addEventListener('click', (event) => {
+    const iframes = document.querySelector('.screenshots');
+    // Clear any existing content
+    iframes.innerHTML = '';
+
     document.querySelector('.title__filter').innerText = event.target.innerText;
     const selectedLang = event.target.getAttribute('data-lang');
     changeLanguage(selectedLang);
@@ -60,9 +64,6 @@ document.querySelectorAll('.button').forEach(button => {
 const mainStuff = async (reactTemplates) => {
   // Get the container element for displaying templates
   const iframes = document.querySelector('.screenshots');
-
-  // Clear any existing content
-  iframes.innerHTML = '';
 
   // Iterate through each template name
   for (const templ of reactTemplates) {
