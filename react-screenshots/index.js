@@ -19,7 +19,7 @@ const changeLanguage = (newLang) => {
 // Function to filter and display templates
 const filterAndDisplayTemplates = async () => {
   // Fetch templates data from JSON file
-  const response = await fetch('../../dashboard-data/templates.json');
+  const response = await fetch('./templates.json');
   const templatesObj = await response.json();
 
   // Define the filter criteria for each language
