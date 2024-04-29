@@ -65,7 +65,9 @@ const mainStuff = async (reactTemplates) => {
   // Get the container element for displaying templates
   const iframes = document.querySelector('.screenshots');
   const filter = document.querySelector('.filter');
+  const loader = document.querySelector('.loader');
   filter.classList.add('inactive');
+  loader.classList.remove('hidden')
 
   // Iterate through each template name
   for (const templ of reactTemplates) {
@@ -95,7 +97,7 @@ const mainStuff = async (reactTemplates) => {
       console.log(`${templ} doesn't exist in folder`);
     }
   }
-  return filter.classList.remove('inactive');
+  return [filter.classList.remove('inactive'), loader.classList.add('hidden')];
 };
 
 // Initial call to display all templates in alphabetical order
