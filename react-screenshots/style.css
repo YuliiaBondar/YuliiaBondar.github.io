@@ -155,3 +155,9 @@ b {
 #backToTop.hidden {
     display: none;
 }
+
+.inactive {
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.5;
+}
