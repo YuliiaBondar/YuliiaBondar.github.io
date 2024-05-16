@@ -34,7 +34,7 @@ const mainStuff = async (reactTemplates) => {
                      <div class="screenshots-inner">
                          <div class="screenshots-img">
                              <a href="./images/${templ}.jpg">
-                                 <img src="./images/${templ}.jpg" loading="lazy" />
+                                 <img src="./images/${templ}.jpg"/>
                              </a>
                          </div>
                      </div>
